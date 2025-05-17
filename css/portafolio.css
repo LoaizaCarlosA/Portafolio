@@ -297,3 +297,185 @@ header {
 #YamYam {
     max-width: 90px;
 }
+
+
+
+
+.contenedor-carruseles {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+.carrusel-logros {
+    flex: 1 1 45%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+}
+
+.carrusel-container {
+    position: relative;
+    overflow: hidden;
+    /* height: 300px; */
+}
+
+.carrusel-slide {
+    display: none;
+}
+
+.carrusel-slide.active {
+    display: block;
+}
+
+.carrusel-slide img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.carrusel-slide p {
+    background-color: #f5c518;
+    margin: 0;
+    padding: 8px;
+    font-weight: bold;
+    color: #222;
+    border-radius: 0 0 10px 10px;
+}
+
+.carrusel-buttons {
+    margin-top: 10px;
+}
+
+.carrusel-buttons button {
+    padding: 6px 12px;
+    font-size: 18px;
+    background-color: #f5c518;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 768px) {
+    .infoNombre {
+        font-size: 28px;
+    }
+
+    /* Menú */
+    .contenedorMenu {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .contenedorMenuHijo,
+    .contenedorMenuHijoContactame,
+    #cambiarIdioma {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Info + imagen */
+    .contenedorInformacionYFoto {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1.5rem 1rem;
+    }
+
+    .contenedorInformacion {
+        padding: 0 1rem;
+    }
+
+    .contenedorImagenPersonal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 550px;
+    }
+
+    .imagenPersonal {
+
+        margin-top: 1rem;
+    }
+
+    /* Botones redes */
+    .contenedorBotonesRedes {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .botonRedes {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
+
+    /* Formación académica */
+    .formacion {
+        padding: 1rem;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .formacion h2 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .clientes {
+        margin-top: 30px;
+    }
+
+    .logo-escuela img {
+        width: 120px;
+    }
+
+    /* Logos clientes */
+    .logos-clientes {
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 20px;
+        gap: 50px;
+        margin: 0px;
+    }
+
+    .logos-clientes img {
+        width: 100px;
+    }
+
+    /* Carruseles */
+    .carrusel-slide img {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .carrusel-buttons button {
+        font-size: 1rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    /* Títulos más compactos */
+    h1,
+    h2,
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .section-title,
+    .tituloEmpresas {
+        text-align: center;
+        font-size: 1.4rem;
+        margin: 0px 50px;
+    }
+}
