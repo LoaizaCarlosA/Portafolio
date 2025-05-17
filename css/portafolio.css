@@ -100,7 +100,7 @@ header {
 }
 
 .contenedorInformacion {
-    max-width: 600px;
+    max-width: 900px;
 }
 
 .infoNombre {
@@ -117,7 +117,6 @@ header {
 
 .contenedorBotonesRedes {
     display: flex;
-    justify-content: center;
     margin-top: 40px;
 }
 
@@ -132,7 +131,7 @@ header {
     display: flex;
     color: #f9f9f9;
     border: 0px;
-    margin: 0px 15px;
+    margin: 0px 30px 0px 0px;
     text-decoration: none;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
@@ -156,7 +155,7 @@ header {
 
 .imagenPersonal {
     display: flex;
-    height: 450px;
+    height: 320px;
     border: 10px solid #856c20;
 }
 
@@ -239,23 +238,24 @@ header {
     padding: 4rem 2rem;
     /* background-color: #f9f9f9; */
     background-image: url("../img/fondo-gris.png");
-  }
-  
-  .experiencia-col, .especialidades-col {
+}
+
+.experiencia-col,
+.especialidades-col {
     flex: 1 1 45%;
     min-width: 300px;
-  }
-  
-  .experiencia-col h2,
-  .especialidades-col h2 {
+}
+
+.experiencia-col h2,
+.especialidades-col h2 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
     border-bottom: 3px solid #3498db;
     display: inline-block;
     padding-bottom: 0.5rem;
-  }
-  
-  .experiencia {
+}
+
+.experiencia {
     background-color: #ffffff;
     border-left: 4px solid #3498db;
     padding: 1.5rem;
@@ -263,72 +263,72 @@ header {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     border-radius: 0.5rem;
     transition: transform 0.2s ease;
-  }
-  
-  .experiencia:hover {
+}
+
+.experiencia:hover {
     transform: translateY(-4px);
-  }
-  
-  .experiencia h3 {
+}
+
+.experiencia h3 {
     margin: 0;
     font-size: 1.3rem;
     color: #2c3e50;
-  }
-  
-  .experiencia h4 {
+}
+
+.experiencia h4 {
     font-size: 1rem;
     color: #7f8c8d;
     margin-top: 0.2rem;
     margin-bottom: 0.8rem;
-  }
-  
-  .experiencia p {
+}
+
+.experiencia p {
     font-size: 0.95rem;
     color: #333;
     line-height: 1.6;
-  }
-  
-  .experiencia h4 span {
+}
+
+.experiencia h4 span {
     font-weight: normal;
-  }
-  
-  .especialidades-grid {
+}
+
+.especialidades-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1.5rem;
-  }
-  
-  .especialidad-card {
+}
+
+.especialidad-card {
     background-color: #ffffff;
     padding: 1.5rem;
     border-radius: 0.75rem;
     text-align: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  
-  .especialidad-card:hover {
+}
+
+.especialidad-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-  }
-  
-  .especialidad-card i {
+}
+
+.especialidad-card i {
     font-size: 2rem;
     color: #3498db;
     margin-bottom: 0.5rem;
-  }
-  
-  .especialidad-card h4 {
+}
+
+.especialidad-card h4 {
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
     color: #2c3e50;
-  }
-  
-  .especialidad-card p {
+}
+
+.especialidad-card p {
     font-size: 0.9rem;
     color: #555;
     line-height: 1.4;
-  }
+}
 
 .contenedorEmpresas {
     display: flex;
@@ -450,6 +450,7 @@ header {
     overflow: hidden;
     /* height: 300px; */
 }
+
 .carrusel-slidee {
     display: none;
 }
