@@ -371,9 +371,7 @@ header {
 
     /* Menú */
     .contenedorMenu {
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
+        display: none;
     }
 
     .contenedorMenuHijo,
@@ -399,7 +397,6 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 550px;
     }
 
     .imagenPersonal {
