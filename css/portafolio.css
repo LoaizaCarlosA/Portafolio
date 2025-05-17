@@ -166,9 +166,9 @@ header {
 }
 
 .tituloEmpresas {
-    margin-top: 100px;
+    margin-top: 0px;
     font-size: 36px;
-    height: 75px;
+    height: 100px;
     background-color: rgb(36 36 36 / 96%);
     width: 100%;
     display: flex;
@@ -236,75 +236,99 @@ header {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    padding: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.experiencia-col,
-.especialidades-col {
+    padding: 4rem 2rem;
+    /* background-color: #f9f9f9; */
+    background-image: url("../img/fondo-gris.png");
+  }
+  
+  .experiencia-col, .especialidades-col {
     flex: 1 1 45%;
-}
-
-.experiencia h2,
-.especialidades-col h2 {
-    margin-bottom: 1rem;
-    color: #333;
-}
-
-.experiencia {
+    min-width: 300px;
+  }
+  
+  .experiencia-col h2,
+  .especialidades-col h2 {
+    font-size: 2rem;
     margin-bottom: 1.5rem;
-    padding: 1rem;
-    background-color: #f8f8f8;
-    border-left: 5px solid #ffc107;
-    border-radius: 8px;
-}
-
-.experiencia h3 {
+    border-bottom: 3px solid #3498db;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+  }
+  
+  .experiencia {
+    background-color: #ffffff;
+    border-left: 4px solid #3498db;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 0.5rem;
+    transition: transform 0.2s ease;
+  }
+  
+  .experiencia:hover {
+    transform: translateY(-4px);
+  }
+  
+  .experiencia h3 {
     margin: 0;
-    color: #222;
-}
-
-.experiencia h4 {
-    color: #666;
-    margin: 0.3rem 0 0.6rem;
+    font-size: 1.3rem;
+    color: #2c3e50;
+  }
+  
+  .experiencia h4 {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-top: 0.2rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .experiencia p {
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .experiencia h4 span {
     font-weight: normal;
-}
-
-.experiencia p {
-    color: #444;
-    margin: 0;
-}
-
-.especialidades-grid {
+  }
+  
+  .especialidades-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1rem;
-}
-
-.especialidad-card {
-    background-color: #fff8e1;
-    border-radius: 12px;
-    padding: 1rem;
+    gap: 1.5rem;
+  }
+  
+  .especialidad-card {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
     text-align: center;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.especialidad-card i {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .especialidad-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  }
+  
+  .especialidad-card i {
     font-size: 2rem;
-    color: #ffc107;
+    color: #3498db;
     margin-bottom: 0.5rem;
-}
-
-.especialidad-card h4 {
-    margin: 0.5rem 0;
-    color: #222;
-}
-
-.especialidad-card p {
+  }
+  
+  .especialidad-card h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+  }
+  
+  .especialidad-card p {
+    font-size: 0.9rem;
     color: #555;
-    font-size: 0.95rem;
-}
+    line-height: 1.4;
+  }
 
 .contenedorEmpresas {
     display: flex;
@@ -436,7 +460,7 @@ header {
 
 .carrusel-slidee img {
     width: 100%;
-    height: 400px;
+    height: 300px;
     object-fit: cover;
     border-radius: 10px;
 }
