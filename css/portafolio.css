@@ -1,0 +1,299 @@
+body {
+    margin: 0px;
+    background-color: #ffffff;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    align-items: center;
+    display: flex;
+    background-color: #262626;
+    width: 100%;
+    height: 100px;
+}
+
+.nombreHeader {
+    color: #dab217;
+    font-family: "Roboto", sans-serif;
+    margin-left: 40px;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.contenedorMenu {
+    display: flex;
+}
+
+.contenedorMenuHijo {
+    background-color: #262626;
+    color: #856c20;
+    font-size: 20px;
+    margin-right: 40px;
+    margin-left: 40px;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
+    font-weight: 100;
+    height: 39px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+
+.contenedorMenuHijo:hover {
+    color: #dab217;
+    font-size: 21px;
+    transition: 0.3s;
+}
+
+.contenedorMenuHijoContactame {
+    background-color: #262626;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    color: #dab217;
+    margin-right: 40px;
+    margin-left: 40px;
+    border: 2px solid #dab217;
+    border-radius: 30px;
+    font-size: 20px;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    transition: 0.5s;
+    font-weight: 100;
+    height: 39px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+
+.contenedorMenuHijoContactame:hover {
+    color: #262626;
+    background-color: #dab217;
+}
+
+
+.separadorMenuHeader {
+    height: 39px;
+    width: 2px;
+    color: white;
+    background-color: white;
+}
+
+.contenedorInformacionYFoto {
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #262626;
+}
+
+.contenedorInformacion {
+    max-width: 600px;
+}
+
+.infoNombre {
+    display: flex;
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.parrafoInformacion {
+    font-size: 25px;
+    text-align: justify;
+    color: #ffffff;
+}
+
+.contenedorBotonesRedes {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.botonRedes {
+    height: 45px;
+    width: 45px;
+    font-size: 27px;
+    background-color: #856c20;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #f9f9f9;
+    border: 0px;
+    margin: 0px 15px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#instagram:hover {
+    color: #E1306C;
+}
+
+#facebook:hover {
+    color: #3b5998;
+}
+
+#linkedin:hover {
+    color: #0077b5;
+}
+
+#cv:hover {
+    color: #0077b5;
+}
+
+.imagenPersonal {
+    display: flex;
+    height: 450px;
+    border: 10px solid #856c20;
+}
+
+.lineaAmarilla {
+    background-color: #262626;
+    width: 100%;
+}
+
+.tituloEmpresas {
+    margin-top: 100px;
+    font-size: 36px;
+    height: 75px;
+    background-color: rgb(36 36 36 / 96%);
+    width: 100%;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.formacion {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 20px;
+    background-color: #fff;
+}
+
+.formacion h2 {
+    margin-top: 90px;
+    font-size: 2rem;
+    color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+.escuelas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo-escuela {
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.logo-escuela img {
+    max-width: 200px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 15px;
+    transition: filter 0.3s;
+}
+
+.logo-escuela img:hover {
+    filter: grayscale(0%);
+}
+
+.logo-escuela h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.logo-escuela p {
+    color: #666;
+    font-size: 18ox;
+    margin: 4px 0;
+}
+
+.contenedorEmpresas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.clientes h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.logos-clientes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+    align-items: center;
+    margin: 50px 100px;
+}
+
+.logos-clientes img {
+    height: auto;
+    filter: grayscale(100%);
+    transition: filter 0.3s, transform 0.3s;
+}
+
+.logos-clientes img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.2);
+}
+
+#Auplex {
+    max-width: 210px;
+}
+
+#Avicor {
+    max-width: 210px;
+}
+
+#Bahk {
+    max-width: 170px;
+}
+
+#ConLocal {
+    max-width: 160px;
+}
+
+#Compania {
+    max-width: 170px;
+}
+
+#MarNegro {
+    max-width: 230px;
+}
+
+#Serhsi {
+    max-width: 100px;
+}
+
+#Spanna {
+    max-width: 150px;
+}
+
+#YamYam {
+    max-width: 90px;
+}

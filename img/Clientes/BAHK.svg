@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="328.625"
+   height="112.782"
+   viewBox="0 0 328.625 112.782"
+   version="1.1"
+   id="svg17"
+   sodipodi:docname="BAHK.svg"
+   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview17"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="3.2133891"
+     inkscape:cx="164.3125"
+     inkscape:cy="56.482422"
+     inkscape:window-width="1872"
+     inkscape:window-height="1186"
+     inkscape:window-x="2290"
+     inkscape:window-y="537"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg17" />
+  <defs
+     id="defs12">
+    <filter
+       id="Trazado_1"
+       x="0"
+       y="0"
+       width="72.678"
+       height="83.093"
+       filterUnits="userSpaceOnUse">
+      <feOffset
+         dy="3"
+         input="SourceAlpha"
+         id="feOffset1" />
+      <feGaussianBlur
+         stdDeviation="3"
+         result="blur"
+         id="feGaussianBlur1" />
+      <feFlood
+         flood-opacity="0.161"
+         id="feFlood1" />
+      <feComposite
+         operator="in"
+         in2="blur"
+         id="feComposite1" />
+      <feComposite
+         in="SourceGraphic"
+         id="feComposite2" />
+    </filter>
+    <filter
+       id="Trazado_2"
+       x="72.054"
+       y="0"
+       width="86.72"
+       height="83.093"
+       filterUnits="userSpaceOnUse">
+      <feOffset
+         dy="3"
+         input="SourceAlpha"
+         id="feOffset2" />
+      <feGaussianBlur
+         stdDeviation="3"
+         result="blur-2"
+         id="feGaussianBlur2" />
+      <feFlood
+         flood-opacity="0.161"
+         id="feFlood2" />
+      <feComposite
+         operator="in"
+         in2="blur-2"
+         id="feComposite3" />
+      <feComposite
+         in="SourceGraphic"
+         id="feComposite4" />
+    </filter>
+    <filter
+       id="Trazado_3"
+       x="154.658"
+       y="0"
+       width="83.744"
+       height="83.093"
+       filterUnits="userSpaceOnUse">
+      <feOffset
+         dy="3"
+         input="SourceAlpha"
+         id="feOffset4" />
+      <feGaussianBlur
+         stdDeviation="3"
+         result="blur-3"
+         id="feGaussianBlur4" />
+      <feFlood
+         flood-opacity="0.161"
+         id="feFlood4" />
+      <feComposite
+         operator="in"
+         in2="blur-3"
+         id="feComposite5" />
+      <feComposite
+         in="SourceGraphic"
+         id="feComposite6" />
+    </filter>
+    <filter
+       id="Trazado_4"
+       x="7.952"
+       y="84.321"
+       width="305.307"
+       height="28.461"
+       filterUnits="userSpaceOnUse">
+      <feOffset
+         dy="3"
+         input="SourceAlpha"
+         id="feOffset6" />
+      <feGaussianBlur
+         stdDeviation="3"
+         result="blur-4"
+         id="feGaussianBlur6" />
+      <feFlood
+         flood-opacity="0.161"
+         id="feFlood6" />
+      <feComposite
+         operator="in"
+         in2="blur-4"
+         id="feComposite7" />
+      <feComposite
+         in="SourceGraphic"
+         id="feComposite8" />
+    </filter>
+    <filter
+       id="Trazado_5"
+       x="242.023"
+       y="0"
+       width="79.188"
+       height="83.093"
+       filterUnits="userSpaceOnUse">
+      <feOffset
+         dy="3"
+         input="SourceAlpha"
+         id="feOffset8" />
+      <feGaussianBlur
+         stdDeviation="3"
+         result="blur-5"
+         id="feGaussianBlur8" />
+      <feFlood
+         flood-opacity="0.161"
+         id="feFlood8" />
+      <feComposite
+         operator="in"
+         in2="blur-5"
+         id="feComposite9" />
+      <feComposite
+         in="SourceGraphic"
+         id="feComposite10" />
+    </filter>
+    <filter
+       id="Trazado_6"
+       x="303.211"
+       y="0"
+       width="25.414"
+       height="25.307"
+       filterUnits="userSpaceOnUse">
+      <feOffset
+         dy="3"
+         input="SourceAlpha"
+         id="feOffset10" />
+      <feGaussianBlur
+         stdDeviation="3"
+         result="blur-6"
+         id="feGaussianBlur10" />
+      <feFlood
+         flood-opacity="0.161"
+         id="feFlood10" />
+      <feComposite
+         operator="in"
+         in2="blur-6"
+         id="feComposite11" />
+      <feComposite
+         in="SourceGraphic"
+         id="feComposite12" />
+    </filter>
+  </defs>
+  <g
+     id="Grupo_354"
+     data-name="Grupo 354"
+     transform="translate(-110.505 -241.716)"
+     style="fill:#000000">
+    <g
+       id="Grupo_1"
+       data-name="Grupo 1"
+       transform="translate(119.505 247.716)"
+       style="fill:#000000">
+      <g
+         transform="matrix(1, 0, 0, 1, -9, -6)"
+         filter="url(#Trazado_1)"
+         id="g12"
+         style="fill:#000000">
+        <path
+           id="Trazado_1-2"
+           data-name="Trazado 1"
+           d="M119.505,247.716v.837l6.045,1.4v60.629l-6.045,1.488v.744h29.757c14.692,0,24.921-6.416,24.921-16.924,0-8.834-6.974-14.693-17.668-16.46,9.113-1.767,15.064-7.253,15.064-15.529,0-10.135-9.206-16.18-22.317-16.18Zm16.087,63.234v-30.5H147.4c9.672,0,16.552,5.022,16.552,15.25,0,10.136-6.881,15.251-16.552,15.251Zm11.81-61.374c8.09,0,13.949,4.929,13.949,14.507,0,9.671-5.858,14.507-13.949,14.507h-11.81V249.576Z"
+           transform="translate(-110.51 -241.72)"
+           fill="#fff"
+           fill-rule="evenodd"
+           style="fill:#000000" />
+      </g>
+      <g
+         transform="matrix(1, 0, 0, 1, -9, -6)"
+         filter="url(#Trazado_2)"
+         id="g13"
+         style="fill:#000000">
+        <path
+           id="Trazado_2-2"
+           data-name="Trazado 2"
+           d="M244.76,247.716h-3.069l-27.246,62.4-6.323,1.767v.93h16.552v-.93l-8.183-1.767,8.183-18.877h28.083l7.812,18.877-6.138,1.767v.93h22.411v-.93l-5.951-1.767-26.13-62.4Zm-5.672,10.229,12.832,31.337H225.511Z"
+           transform="translate(-127.07 -241.72)"
+           fill="#fff"
+           fill-rule="evenodd"
+           style="fill:#000000" />
+      </g>
+      <g
+         transform="matrix(1, 0, 0, 1, -9, -6)"
+         filter="url(#Trazado_3)"
+         id="g14"
+         style="fill:#000000">
+        <path
+           id="Trazado_3-2"
+           data-name="Trazado 3"
+           d="M309.711,311.879v.93h22.132v-.93l-6.045-1.767V280.635h33.663v29.478l-6.045,1.767v.93h22.039v-.93l-6.045-1.767v-59.7l6.045-1.766v-.93H353.416v.93l6.045,1.766v28.269H325.8V250.413l6.045-1.766v-.93H309.711v.93l6.044,1.766v59.7Z"
+           transform="translate(-146.05 -241.72)"
+           fill="#fff"
+           fill-rule="evenodd"
+           style="fill:#000000" />
+      </g>
+      <g
+         transform="matrix(1, 0, 0, 1, -9, -6)"
+         filter="url(#Trazado_4)"
+         id="g15"
+         style="fill:#000000">
+        <path
+           id="Trazado_4-2"
+           data-name="Trazado 4"
+           d="M137.389,358.9h-5.982l-1.312,2.9h-.811l4.745-10.315h.751l4.744,10.315h-.81l-1.327-2.9Zm-.28-.634-2.712-5.953-2.7,5.953Zm19.628,2.859v.678H149.62V351.491h6.9v.678h-6.145v4.067h5.5v.663h-5.5v4.229Zm13.674.751a6.008,6.008,0,0,1-2.158-.39,4.167,4.167,0,0,1-1.6-1.009l.339-.56a4,4,0,0,0,1.466.936,5.263,5.263,0,0,0,1.938.361,3.7,3.7,0,0,0,2.224-.559,1.739,1.739,0,0,0,.752-1.46,1.524,1.524,0,0,0-.4-1.1,2.631,2.631,0,0,0-.987-.634A13.492,13.492,0,0,0,170.4,357a15.36,15.36,0,0,1-1.821-.546,2.9,2.9,0,0,1-1.164-.817,2.186,2.186,0,0,1-.478-1.481,2.521,2.521,0,0,1,.4-1.378,2.7,2.7,0,0,1,1.216-.994,4.972,4.972,0,0,1,2.041-.368,5.734,5.734,0,0,1,1.68.25,4.95,4.95,0,0,1,1.429.677l-.281.6a4.77,4.77,0,0,0-1.363-.648,5.14,5.14,0,0,0-1.466-.221,3.473,3.473,0,0,0-2.166.575,1.8,1.8,0,0,0-.737,1.488,1.525,1.525,0,0,0,.4,1.105,2.624,2.624,0,0,0,.987.633,14.788,14.788,0,0,0,1.607.471,15.192,15.192,0,0,1,1.812.546,2.974,2.974,0,0,1,1.158.8,2.1,2.1,0,0,1,.478,1.451,2.454,2.454,0,0,1-.4,1.371,2.758,2.758,0,0,1-1.245.986,5.125,5.125,0,0,1-2.064.368Zm16.313-9.71H183.01v-.678h8.178v.678h-3.714v9.637h-.751v-9.637Zm22.943-.678v10.315h-.751V356.9h-6.9v4.907h-.751V351.491h.751v4.745h6.9v-4.745Zm18.936,9.637v.678h-7.117V351.491h6.9v.678h-6.145v4.067h5.5v.663h-5.5v4.229Zm12.937-8.959h-3.714v-.678H246v.678h-3.713v9.637h-.751v-9.637Zm14.544-.678h.751v10.315h-.751V351.491Zm16.931,10.388a5.515,5.515,0,0,1-2.734-.677,5.007,5.007,0,0,1-1.916-1.872,5.486,5.486,0,0,1,0-5.363,5,5,0,0,1,1.916-1.871,5.505,5.505,0,0,1,2.734-.678,5.708,5.708,0,0,1,2.063.361,4.252,4.252,0,0,1,1.606,1.068l-.471.486a4.321,4.321,0,0,0-3.169-1.223,4.778,4.778,0,0,0-2.358.59,4.314,4.314,0,0,0-1.664,1.629,4.759,4.759,0,0,0,0,4.641,4.307,4.307,0,0,0,1.664,1.629,4.771,4.771,0,0,0,2.358.59,4.326,4.326,0,0,0,3.169-1.238l.471.485a4.3,4.3,0,0,1-1.613,1.076,5.624,5.624,0,0,1-2.056.368Zm37.367-.073-.015-8.827-4.317,7.456h-.368l-4.318-7.426v8.8h-.736V351.491h.633l4.612,7.973,4.613-7.973h.619l.015,10.315Zm19.671-.678v.678h-7.117V351.491h6.9v.678h-6.144v4.067h5.5v.663h-5.5v4.229Zm10.963-9.637H345.1a5.971,5.971,0,0,1,2.852.663,4.841,4.841,0,0,1,1.938,1.834,5.451,5.451,0,0,1,0,5.319,4.847,4.847,0,0,1-1.938,1.835,5.984,5.984,0,0,1-2.852.663h-4.081V351.491Zm4.022,9.637a5.376,5.376,0,0,0,2.52-.568,4.068,4.068,0,0,0,1.68-1.583,4.9,4.9,0,0,0,0-4.658,4.057,4.057,0,0,0-1.68-1.583,5.379,5.379,0,0,0-2.52-.568h-3.272v8.959Zm16.371-9.637h.751v10.315h-.751V351.491Zm16.931,10.388a5.5,5.5,0,0,1-2.734-.677,5,5,0,0,1-1.915-1.872,5.487,5.487,0,0,1,0-5.363,5,5,0,0,1,1.915-1.871,5.507,5.507,0,0,1,2.734-.678,5.727,5.727,0,0,1,2.063.361,4.255,4.255,0,0,1,1.607,1.068l-.472.486a4.321,4.321,0,0,0-3.169-1.223,4.771,4.771,0,0,0-2.357.59,4.313,4.313,0,0,0-1.665,1.629,4.759,4.759,0,0,0,0,4.641,4.313,4.313,0,0,0,1.665,1.629,4.766,4.766,0,0,0,2.357.59,4.324,4.324,0,0,0,3.169-1.238l.472.485a4.306,4.306,0,0,1-1.614,1.076,5.621,5.621,0,0,1-2.056.368Zm20.512-2.976H392.87l-1.312,2.9h-.811l4.745-10.315h.751l4.745,10.315h-.811l-1.326-2.9Zm-.28-.634-2.712-5.953-2.7,5.953Zm11.329-6.778h.751v9.637h5.939v.678H409.9Z"
+           transform="translate(-112.33 -261.1)"
+           fill="#fff"
+           fill-rule="evenodd"
+           style="fill:#000000" />
+      </g>
+      <g
+         transform="matrix(1, 0, 0, 1, -9, -6)"
+         filter="url(#Trazado_5)"
+         id="g16"
+         style="fill:#000000">
+        <path
+           id="Trazado_5-2"
+           data-name="Trazado 5"
+           d="M433.151,250.412l6.045-1.766v-.93H417.157v.93l6.044,1.766v59.7l-6.044,1.767v.93H439.2v-.93l-6.045-1.767v-23.9l7.254-7.811,23.061,34.406h14.878v-.93L473.2,310.31l-.049-.074-.082.074L465,298.287a8.428,8.428,0,0,0-3.521-3.407,56.72,56.72,0,0,0-8.407-2.776c-5.751-1.565-2.247-4.494-2.977-7.509-1.286-2.372-1.471-1.707.494-3.65a5.988,5.988,0,0,1-1.938-1.694c-.7-1.043,1.533-2.561,1.285-3.008-.182-.328-1.815-1.223-2.37-2.238a.994.994,0,0,1,.039-1.138c.671-.523,1.575-.875,2.918-1.955,2.038-1.638,4.354-3.95,4.992-5.513.581-1.422.037-3.234.7-4.378,2.225-3.857,5.152-8,10.739-10.491v0l.007,0a25.609,25.609,0,0,1,6.644-1.88h0v-.93H456.864v.93l6.558,1.538L433.151,283.7Z"
+           transform="translate(-166.13 -241.72)"
+           fill="#fff"
+           fill-rule="evenodd"
+           style="fill:#000000" />
+      </g>
+    </g>
+    <g
+       transform="matrix(1, 0, 0, 1, 110.51, 241.72)"
+       filter="url(#Trazado_6)"
+       id="g17"
+       style="fill:#000000">
+      <path
+         id="Trazado_6-2"
+         data-name="Trazado 6"
+         d="M496.116,255.023a3.637,3.637,0,0,1-2.634-1.039,3.506,3.506,0,0,1-1.073-2.63,3.465,3.465,0,0,1,1.057-2.63,4.01,4.01,0,0,1,5.316,0,3.492,3.492,0,0,1,1.041,2.63,3.535,3.535,0,0,1-1.056,2.63,3.625,3.625,0,0,1-2.651,1.039Zm1.181-1.831h.568L497,251.969a1.183,1.183,0,0,0,.594-.433,1.218,1.218,0,0,0,.209-.719,1.146,1.146,0,0,0-.407-.931,1.691,1.691,0,0,0-1.116-.338h-1.423v3.644h.521v-1.109h.9c.055,0,.133,0,.229-.01l.787,1.119Zm-1.032-1.552a1.165,1.165,0,0,0,.755-.213.742.742,0,0,0,.261-.61.733.733,0,0,0-.261-.606,1.175,1.175,0,0,0-.755-.211h-.886v1.639Zm-.149,2.9a3.148,3.148,0,0,0,2.312-.9,3.344,3.344,0,0,0,.019-4.57,3.529,3.529,0,0,0-4.646,0,2.992,2.992,0,0,0-.907,2.281,3.028,3.028,0,0,0,.925,2.284A3.16,3.16,0,0,0,496.116,254.541Z"
+         transform="translate(-180.2 -241.72)"
+         fill="#fff"
+         fill-rule="evenodd"
+         style="fill:#000000" />
+    </g>
+  </g>
+</svg>
