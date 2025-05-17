@@ -18,10 +18,10 @@
         <!-- <div class="nombreHeader">CL</div> -->
       </section>
       <section class="contenedorMenu">
-        <div class="contenedorMenuHijo">Inicio</div>
-        <div class="contenedorMenuHijo">¿Quién soy?</div>
-        <div class="contenedorMenuHijo">Portafolio</div>
-        <div class="contenedorMenuHijoContactame">Contáctame</div>
+        <a class="contenedorMenuHijo" href="#inicio">Inicio</a>
+        <a class="contenedorMenuHijo" href="#quien-soy">¿Quién soy?</a>
+        <a class="contenedorMenuHijo" href="#portafolio">Portafolio</a>
+        <a class="contenedorMenuHijoContactame" href="#contacto">Contáctame</a>
         <div class="separadorMenuHeader"></div>
         <div class="contenedorMenuHijo" id="cambiarIdioma">Inglés</div>
       </section>
@@ -85,7 +85,7 @@
         alt="LineaAmarilla"
       />
     </section>
-    <section class="formacion">
+    <section class="formacion" id="quien-soy">
       <div class="escuelas">
         <h2>Mi Alma Máter</h2>
         <div class="logo-escuela">
@@ -108,6 +108,11 @@
         </div>
       </div>
     </section>
+
+    <!-- <section>
+        <h2>Experiencia Profesional</h2>
+        <h2>Especialidades</h2>
+    </section> -->
 
     <section class="seccion-experiencia-especialidades">
       <div class="experiencia-col">
@@ -190,24 +195,79 @@
       </section>
     </section>
 
-    <section class="seccion-sistemas">
+    <section class="seccion-sistemas" id="portafolio">
       <h2>Proyectos Reales</h2>
       <p class="intro-sistemas">
         Algunos de los sistemas en los que he trabajado profesionalmente.
       </p>
       <div class="galeria-sistemas">
-        <div class="sistema-item">
-          <img src="img/Logros/1.jpeg" alt="Sistema 1" />
-          <p>Panel de gestión ISSSTEESIN</p>
-        </div>
-        <div class="sistema-item">
+        <section class="carrusel-clientes">
+          <div class="carrusel-container">
+            <div class="carrusel-slidee active">
+              <img src="img/Proyectos/Is/Login.png" alt="Ganador Hackatón" />
+              <p>1.</p>
+            </div>
+            <div class="carrusel-slidee">
+              <img src="img/Proyectos/Is/Login.png" alt="Otro logro" />
+              <p>1.</p>
+            </div>
+          </div>
+          <div class="carrusel-buttons">
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+          </div>
+        </section>
+        <section class="carrusel-clientes">
+          <div class="carrusel-container">
+            <div class="carrusel-slidee active">
+              <img src="img/Proyectos/Bahk/Login.png" alt="Ganador Hackatón" />
+              <p>1</p>
+            </div>
+            <div class="carrusel-slidee">
+              <img src="img/Proyectos/Bahk/Login.png" alt="Otro logro" />
+              <p>1.</p>
+            </div>
+          </div>
+          <div class="carrusel-buttons">
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+          </div>
+        </section>
+        <section class="carrusel-clientes">
+          <div class="carrusel-container">
+            <div class="carrusel-slidee active">
+              <img
+                src="img/Proyectos/LandingYamYam.png"
+                alt="Ganador Hackatón"
+              />
+              <p>YamYam</p>
+            </div>
+            <div class="carrusel-slidee">
+              <img src="img/Proyectos/LandingCompania.png" alt="Otro logro" />
+              <p>La Compañía</p>
+            </div>
+            <div class="carrusel-slidee">
+              <img src="img/Proyectos/LandingSpanna.png" alt="Otro logro" />
+              <p>SPANNA</p>
+            </div>
+            <div class="carrusel-slidee">
+              <img src="img/Proyectos/LandingAuplex.png" alt="Otro logro" />
+              <p>AUPLEX</p>
+            </div>
+            <div class="carrusel-slidee">
+              <img src="img/Proyectos/LandingSerhsi.png" alt="Otro logro" />
+              <p>SERHSI</p>
+            </div>
+          </div>
+          <div class="carrusel-buttons">
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+          </div>
+        </section>
+        <!-- <div class="sistema-item">
           <img src="img/Logros/1.jpeg" alt="Sistema 2" />
           <p>Dashboard de clientes Spanna</p>
-        </div>
-        <div class="sistema-item">
-            <img src="img/Logros/1.jpeg" alt="Sistema 2" />
-            <p>Dashboard de clientes Spanna</p>
-          </div>
+        </div> -->
         <!-- Puedes seguir agregando -->
       </div>
     </section>
@@ -297,7 +357,7 @@
     <footer class="footer">
       <div class="footer-contenido">
         <div class="footer-nombre">
-          <h3>Carlos Loaiza</h3>
+          <h3>Carlos Andrés Loaiza</h3>
           <p>Desarrollador Web | Frontend & Backend</p>
         </div>
 
@@ -318,7 +378,7 @@
       </div>
 
       <div class="footer-copy">
-        <p>&copy; 2025 Carlos Loaiza. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Carlos Andrés Loaiza. Todos los derechos reservados.</p>
       </div>
     </footer>
     <script src="js/portafolio.js"></script>

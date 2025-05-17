@@ -25,6 +25,38 @@ if (divIdioma) {
 }
 
 
+document.querySelectorAll('.carrusel-clientes').forEach((carrusel) => {
+  const slides = carrusel.querySelectorAll('.carrusel-slidee');
+  const prevBtn = carrusel.querySelector('.prev');
+  const nextBtn = carrusel.querySelector('.next');
+  let currentIndex = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+    });
+  }
+
+  prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    showSlide(currentIndex);
+  });
+
+  nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+  });
+
+  // Carrusel automático cada 5 segundos
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+  }, 5000);
+
+  // Mostrar la primera slide al cargar
+  showSlide(currentIndex);
+});
+
 document.querySelectorAll('.carrusel-logros').forEach((carrusel) => {
   const slides = carrusel.querySelectorAll('.carrusel-slide');
   const prevBtn = carrusel.querySelector('.prev');
