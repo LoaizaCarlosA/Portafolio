@@ -51,7 +51,7 @@ document.querySelectorAll(".carrusel-clientes").forEach((carrusel) => {
   setInterval(() => {
     currentIndex = (currentIndex + 1) % slides.length;
     showSlide(currentIndex);
-  }, 5000);
+  }, 1500);
 
   // Mostrar la primera slide al cargar
   showSlide(currentIndex);
@@ -83,7 +83,7 @@ document.querySelectorAll(".carrusel-logros").forEach((carrusel) => {
   setInterval(() => {
     currentIndex = (currentIndex + 1) % slides.length;
     showSlide(currentIndex);
-  }, 5000);
+  }, 1500);
 
   // Mostrar la primera slide al cargar
   showSlide(currentIndex);
