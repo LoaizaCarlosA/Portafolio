@@ -211,11 +211,15 @@ header {
 }
 
 .formacion {
+    border-right: 4px solid #dab217;
     display: flex;
     justify-content: space-evenly;
     padding: 0px 20px;
     width: 100%;
     background-color: rgb(249, 249, 249);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 0.5rem;
+    transition: transform 0.2s ease;
 }
 
 .formacion h2 {
@@ -293,8 +297,8 @@ header {
 .experiencia {
     background-color: #f9f9f9;
     border-left: 4px solid #dab217;
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
+    padding: 2.5rem;
+    margin-bottom: 2.5rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     border-radius: 0.5rem;
     transition: transform 0.2s ease;
@@ -318,7 +322,7 @@ header {
 }
 
 .experiencia p {
-    font-size: 0.95rem;
+    font-size: 1rem;
     color: #333;
     line-height: 1.6;
 }
@@ -328,18 +332,32 @@ header {
 }
 
 .especialidades-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); */
     gap: 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+}
+
+.contenedorTarjetas {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .especialidad-card {
-    background-color: #f9f9f9;
+    background-color: #262626;
     padding: 1.5rem;
     border-radius: 0.75rem;
     text-align: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    height: 332px;
+    width: 265px;
 }
 
 .especialidad-card:hover {
