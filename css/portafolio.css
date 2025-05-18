@@ -924,6 +924,9 @@ header {
         gap: 40px;
         margin: 1rem;
     }
+    .logos-clientes img{
+        filter: grayscale(0%);
+    }
     .seccion-contacto h2{
         margin-top: 0px;
     }
