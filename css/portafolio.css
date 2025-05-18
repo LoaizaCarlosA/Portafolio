@@ -23,6 +23,8 @@ header {
     font-size: 45px;
 }
 
+
+
 .contenedorMenu {
     display: flex;
 }
@@ -84,6 +86,9 @@ header {
     background-color: #dab217;
 }
 
+.menu-movil-click {
+    display: none;
+}
 
 .separadorMenuHeader {
     height: 39px;
@@ -807,6 +812,29 @@ header {
 }
 
 @media (max-width: 425px) {
+    header {
+        padding-top: 0px;
+        height: 80px;
+    }
+
+    .menu-movil-click {
+        width: 10%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 30px;
+    }
+
+    .barra {
+        width: 100%;
+        height: 5px;
+        background: white;
+        margin: 2px 0;
+        transition: all 0.3s;
+        border-radius: 2px;
+    }
+
     .contenedorInformacionYFoto {
         flex-direction: column-reverse;
     }
