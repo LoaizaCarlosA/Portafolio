@@ -149,3 +149,85 @@ document.getElementById("cambiarIdioma").addEventListener("click", () => {
     if (textareaMensaje) textareaMensaje.placeholder = "Escribe tu mensaje...";
   }
 });
+
+// Mostrar/ocultar el botón al hacer scroll
+window.addEventListener("scroll", () => {
+  const boton = document.getElementById("botonSubir");
+  if (window.scrollY > 300) {
+    boton.style.display = "flex";
+  } else {
+    boton.style.display = "none";
+  }
+});
+
+// Hacer scroll hacia arriba al hacer clic
+document.getElementById("botonSubir").addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+
+// const foto = document.getElementById('fotoPersonal');
+//   const contenedorOriginal = document.querySelector('.contenedorImagenPersonal');
+//   const header = document.querySelector('header');
+//   let isInHeader = false;
+
+//   window.addEventListener('scroll', () => {
+//     if (window.scrollY > 200 && !isInHeader) {
+//       foto.classList.add('imagenEnHeader');
+//       header.appendChild(foto); // Mover al header
+//       isInHeader = true;
+//     } else if (window.scrollY <= 200 && isInHeader) {
+//       foto.classList.remove('imagenEnHeader');
+//       contenedorOriginal.appendChild(foto); // Volver a su lugar
+//       isInHeader = false;
+//     }
+//   });
+
+
+
+// const foto = document.getElementById("fotoPersonal");
+// const seccionInicio = document.querySelector(".contenedorInformacionYFoto");
+
+// window.addEventListener("scroll", () => {
+//   const scrollY = window.scrollY;
+//   if (scrollY > seccionInicio.offsetHeight) {
+//     foto.classList.add("fixed-header");
+//   } else {
+//     foto.classList.remove("fixed-header");
+//   }
+// });
+
+// window.addEventListener("scroll", function () {
+//   const header = document.querySelector("header");
+//   if (window.scrollY > 100) {
+//     header.classList.add("scroll-activo");
+//   } else {
+//     header.classList.remove("scroll-activo");
+//   }
+// });
+
+
+
+const foto = document.getElementById("fotoPersonal");
+const redes = document.getElementById("redesHeader");
+const logo = document.getElementById("nombreHeader");
+const seccionInicio = document.querySelector(".contenedorInformacionYFoto");
+
+window.addEventListener("scroll", () => {
+  const scrollY = window.scrollY;
+  const header = document.querySelector("header");
+
+  if (scrollY > seccionInicio.offsetHeight) {
+    foto.classList.add("fixed-header");
+    redes.classList.add("mostrar-redes");
+    logo.classList.add("ocultar-logo");
+    header.classList.add("scroll-activo");
+  } else {
+    foto.classList.remove("fixed-header");
+    redes.classList.remove("mostrar-redes");
+    logo.classList.remove("ocultar-logo");
+    header.classList.remove("scroll-activo");
+  }
+});
