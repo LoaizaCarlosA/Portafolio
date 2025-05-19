@@ -928,9 +928,18 @@ header.scroll-activo #separadorScroll {
         height: 620px;
     }
 
+    .ocultar-logo {
+        margin-left: 15px;
+    }
+
     .imagenPersonal {
         margin-top: 0px;
         height: 300px;
+    }
+
+    .imagenPersonal.fixed-header {
+        top: 17px;
+        left: 20px;
     }
 
     .infoNombre {
@@ -957,6 +966,9 @@ header.scroll-activo #separadorScroll {
         width: 30px;
         height: 30px;
         font-size: 30px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
     }
 
     .TituloAcercaDe {
