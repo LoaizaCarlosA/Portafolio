@@ -12,7 +12,7 @@
     <title>Portafolio | Carlos Loaiza</title>
   </head>
 
-  <body>
+  <body id="inicio">
     <header>
       <section class="logo">
         <div class="nombreHeader" id="nombreHeader">CL</div>
@@ -143,9 +143,10 @@
         class="lineaAmarilla"
         src="img/imagenes/lineamarilla.svg"
         alt="LineaAmarilla"
+        id="quien-soy"
       />
     </section>
-    <section class="AcercaDeMi" id="quien-soy">
+    <section class="AcercaDeMi">
       <h1 class="TituloAcercaDe">ACERCA DE MÍ</h1>
       <div class="SeparadorAcercaDe"></div>
       <p class="ParrafoAcercaDe">
@@ -258,13 +259,13 @@
             <img src="img/62521.png" alt="TecNM Culiacán" />
             <h3>Instituto Tecnológico Nacional de México - Campus Culiacán</h3>
             <p>Ingeniería en Sistemas Computacionales</p>
-            <p>2018 - 2023</p>
+            <p id="portafolio">2018 - 2023</p>
           </div>
         </div>
       </section>
     </section>
 
-    <section class="Proyectos" id="portafolio">
+    <section class="Proyectos">
       <h2 class="TituloProyectos">PROYECTOS</h2>
       <div class="SeparadorAcercaDe"></div>
       <p class="intro-sistemas">
@@ -342,57 +343,9 @@
         </div>
       </section>
     </section>
-    <!-- <section class="contenedor-carruseles">
-        <section class="carrusel-logros">
-            <h2>Mis Logros</h2>
-            <div class="carrusel-container">
-                <div class="carrusel-slide active">
-                    <img src="img/Logros/1.jpeg" alt="Ganador Hackatón" />
-                    <p>1er Lugar - Hackatón Emprendeichon 2021.</p>
-                </div>
-                <div class="carrusel-slide">
-                    <img src="img/Logros/3.jpeg" alt="Otro logro" />
-                    <p>Entrega oficial de premio por parte del jurado del Hackatón.</p>
-                </div>
-            </div>
-            <div class="carrusel-buttons">
-                <button class="prev">&#10094;</button>
-                <button class="next">&#10095;</button>
-            </div>
-        </section>
-        <section class="carrusel-logros">
-            <h2>Certificados</h2>
-            <div class="carrusel-container">
-                <div class="carrusel-slide active">
-                    <img src="img/Certificaciones/download-1.png" alt="Certificado 1" />
-                    <p>Certificado Frontend 2024</p>
-                </div>
-                <div class="carrusel-slide">
-                    <img src="img/Certificaciones/download-2.png" alt="Certificado 1" />
-                    <p>Certificado Backend 2024</p>
-                </div>
-                <div class="carrusel-slide">
-                    <img src="img/Certificaciones/download-3.png" alt="Certificado 1" />
-                    <p>Certificado Backend 2024</p>
-                </div>
-                <div class="carrusel-slide">
-                    <img src="img/Certificaciones/download-4.png" alt="Certificado 1" />
-                    <p>Certificado Backend 2024</p>
-                </div>
-            </div>
-            <div class="carrusel-buttons">
-                <button class="prev">&#10094;</button>
-                <button class="next">&#10095;</button>
-            </div>
-        </section>
-    </section> -->
-
     <section class="seccion-contacto" id="contacto">
       <h2>Contáctame</h2>
-      <form
-        class="formulario-contacto"
-        id="formulario-contacto"
-      >
+      <form class="formulario-contacto" id="formulario-contacto">
         <label for="nombre">Nombre</label>
         <input
           type="text"

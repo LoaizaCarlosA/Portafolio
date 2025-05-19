@@ -5,7 +5,7 @@ html {
 body {
     margin: 0px;
     font-family: "Roboto", sans-serif;
-    padding-top: 70px;
+    padding-top: 80px;
     background-color: #262626;
 }
 
@@ -15,7 +15,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 70px;
+    height: 80px;
     z-index: 1000;
     background-color: #262626;
     transition: height 0.3s ease;
@@ -43,7 +43,7 @@ header.scroll-activo .botonRedes i {
 
 .ocultar-logo {
     visibility: hidden;
-    margin-left: 35px;
+    margin-left: 28px;
 }
 
 header.scroll-activo #redesHeader {
@@ -177,6 +177,9 @@ header.scroll-activo #redesHeader {
     text-decoration: none;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .botonRedes:hover {
@@ -204,6 +207,7 @@ header.scroll-activo #separadorScroll {
     background-color: white;
     opacity: 1;
     gap: 0px;
+    margin: 0px 20px;
 }
 
 .imagenPersonal {
@@ -216,8 +220,8 @@ header.scroll-activo #separadorScroll {
 
 .imagenPersonal.fixed-header {
     position: fixed;
-    top: 13px;
-    left: 40px;
+    top: 17px;
+    left: 38px;
     width: 40px;
     height: 40px;
     border-radius: 50%;
