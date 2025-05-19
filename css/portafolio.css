@@ -407,10 +407,25 @@ header.scroll-activo #separadorScroll {
     font-size: 1rem;
     color: #333;
     line-height: 1.6;
+    margin-top: 8px;
 }
 
 .experiencia h4 span {
     font-weight: normal;
+}
+.contenedorLogoExpProf{
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.tiempoExp{
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-left: 7px;
+}
+.LogoIsssteesinExpProf{
+    width: 120px;
 }
 
 .especialidades-grid {
