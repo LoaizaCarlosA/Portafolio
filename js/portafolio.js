@@ -168,7 +168,48 @@ window.addEventListener("scroll", () => {
   }
 });
 
-const formulario = document.getElementById("formulario-contacto");
+// const formulario = document.getElementById("formulario-contacto");
+
+// formulario.addEventListener("submit", async (e) => {
+//   e.preventDefault();
+
+//   const nombre = formulario.nombre.value.trim();
+//   const correo = formulario.correo.value.trim();
+//   const mensaje = formulario.mensaje.value.trim();
+
+//   try {
+//     const response = await fetch("https://contact-api-df64.onrender.com/contacto", {
+//       method: "POST",
+//       headers: {
+//         "Content-Type": "application/json"
+//       },
+//       body: JSON.stringify({ nombre, correo, mensaje })
+//     });
+
+//     const data = await response.json();
+
+//     if (response.ok) {
+//       Swal.fire({
+//         icon: "success",
+//         title: "¡Mensaje enviado!",
+//         text: "Gracias por contactarme.",
+//         confirmButtonColor: "#3085d6",
+//       });
+//       formulario.reset(); // limpia el formulario
+//     } else {
+//       throw new Error(data.message || "Error al enviar el mensaje");
+//     }
+
+//   } catch (error) {
+//     Swal.fire({
+//       icon: "error",
+//       title: "Oops...",
+//       text: error.message || "No se pudo enviar el mensaje.",
+//       confirmButtonColor: "#d33",
+//     });
+//   }
+// });
+
 
 formulario.addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -176,6 +217,10 @@ formulario.addEventListener("submit", async (e) => {
   const nombre = formulario.nombre.value.trim();
   const correo = formulario.correo.value.trim();
   const mensaje = formulario.mensaje.value.trim();
+
+  const btnEnviar = formulario.querySelector("button[type='submit']");
+  btnEnviar.disabled = true;
+  btnEnviar.textContent = "Enviando...";
 
   try {
     const response = await fetch("https://contact-api-df64.onrender.com/contacto", {
@@ -195,7 +240,7 @@ formulario.addEventListener("submit", async (e) => {
         text: "Gracias por contactarme.",
         confirmButtonColor: "#3085d6",
       });
-      formulario.reset(); // limpia el formulario
+      formulario.reset();
     } else {
       throw new Error(data.message || "Error al enviar el mensaje");
     }
@@ -207,5 +252,8 @@ formulario.addEventListener("submit", async (e) => {
       text: error.message || "No se pudo enviar el mensaje.",
       confirmButtonColor: "#d33",
     });
+  } finally {
+    btnEnviar.disabled = false;
+    btnEnviar.textContent = "Enviar";
   }
 });
