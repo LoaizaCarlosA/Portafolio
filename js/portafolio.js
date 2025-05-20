@@ -178,13 +178,16 @@ formulario.addEventListener("submit", async (e) => {
   const mensaje = formulario.mensaje.value.trim();
 
   try {
-    const response = await fetch("https://contact-api-df64.onrender.com/contacto", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({ nombre, correo, mensaje })
-    });
+    const response = await fetch(
+      "https://contact-api-df64.onrender.com/contacto",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ nombre, correo, mensaje }),
+      }
+    );
 
     const data = await response.json();
 
@@ -199,7 +202,6 @@ formulario.addEventListener("submit", async (e) => {
     } else {
       throw new Error(data.message || "Error al enviar el mensaje");
     }
-
   } catch (error) {
     Swal.fire({
       icon: "error",
