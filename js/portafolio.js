@@ -167,3 +167,35 @@ window.addEventListener("scroll", () => {
     header.classList.remove("scroll-activo");
   }
 });
+
+const form = document.getElementById('formulario-contacto');
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+
+  const data = {
+    nombre: form.nombre.value,
+    correo: form.correo.value,
+    mensaje: form.mensaje.value,
+  };
+
+  try {
+    const response = await fetch('https://contact-api-df64.onrender.com/contacto', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    });
+
+    const result = await response.json();
+
+    if (response.ok) {
+      alert('Mensaje enviado con éxito');
+      form.reset();
+    } else {
+      alert('Error: ' + (result.message || 'No se pudo enviar el mensaje'));
+    }
+  } catch (error) {
+    alert('Error al enviar el mensaje');
+    console.error(error);
+  }
+});
