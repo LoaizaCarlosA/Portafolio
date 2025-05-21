@@ -224,6 +224,11 @@ header.scroll-activo #separadorScroll {
     border: 10px solid #856c20;
 }
 
+.imagenPersonal:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
 .imagenPersonal.fixed-header {
     position: fixed;
     top: 17px;
