@@ -211,3 +211,67 @@ formulario.addEventListener("submit", async (e) => {
     });
   }
 });
+
+// const target = document.getElementById("typed-text");
+//   const name = "Carlos Andrés Loaiza";
+//   const speed = 100;
+//   const hackChars = "!@#$%^&*()_+[]{}<>?/|";
+
+//   function delay(ms) {
+//     return new Promise(resolve => setTimeout(resolve, ms));
+//   }
+
+//   function getStyledText(plainText, hack = false) {
+//     const carlos = plainText.slice(0, 7); // "Carlos "
+//     const andres = plainText.slice(7, 14); // "Andrés "
+//     const loaiza = plainText.slice(14); // "Loaiza"
+
+//     return `
+//       <span class="${hack ? 'verde' : ''}">${carlos}</span>
+//       <span class="${hack ? 'verde' : 'dorado'}">${andres}</span>
+//       <span class="${hack ? 'verde' : ''}">${loaiza}</span>
+//     `;
+//   }
+
+//   async function typeText(text) {
+//     for (let i = 0; i <= text.length; i++) {
+//       const current = text.substring(0, i);
+//       target.innerHTML = getStyledText(current);
+//       await delay(speed);
+//     }
+//   }
+
+//   async function deleteText() {
+//     let current = target.textContent;
+//     for (let i = current.length; i >= 0; i--) {
+//       const slice = current.substring(0, i);
+//       target.innerHTML = getStyledText(slice);
+//       await delay(speed / 2);
+//     }
+//   }
+
+//   async function hackEffect(duration = 1000) {
+//     const start = Date.now();
+//     while (Date.now() - start < duration) {
+//       let randomText = "";
+//       for (let i = 0; i < name.length; i++) {
+//         randomText += hackChars[Math.floor(Math.random() * hackChars.length)];
+//       }
+//       target.innerHTML = getStyledText(randomText, true);
+//       await delay(50);
+//     }
+//   }
+
+//   async function loop() {
+//     while (true) {
+//       await typeText(name);
+//       await delay(1000);
+//       await deleteText();
+//       await hackEffect();
+//       await typeText(name);
+//       await delay(2000);
+//       await deleteText();
+//     }
+//   }
+
+//   loop();

@@ -12,6 +12,7 @@
 
     <title>Portafolio | Carlos Loaiza</title>
   </head>
+
   <body id="inicio">
     <header>
       <section class="logo">
@@ -72,6 +73,7 @@
         <div class="barra"></div>
       </div>
     </header>
+
     <section class="contenedorInformacionYFoto">
       <section class="contenedorInformacion">
         <h1
@@ -79,8 +81,16 @@
           data-es="Hola, Soy Carlos Andrés Loaiza"
           data-en="Hi, I'm Carlos Andrés Loaiza"
         >
-          Hola, Soy Carlos Andrés Loaiza
+          Hola, <span class="typing" style="margin-left: 10px;">Soy Carlos<span style="color: #dab217;"> Andrés</span> Loaiza.</span> 
         </h1>
+        <!-- <h1 class="infoNombre">
+          Hola, Soy 
+          <span id="typed-text">
+            <span id="nombre-parte-1">Carlos </span>
+            <span id="nombre-parte-2">Andrés </span>
+            <span id="nombre-parte-3">Loaiza.</span>
+          </span>
+        </h1> -->
         <p class="parrafoInformacion">
           <span class="spanAmarillo">Desarrollador Full Stack</span> orientado a
           resultados, enfocado en diseñar, crear y mantener sistemas web
@@ -156,6 +166,7 @@
     <section class="seccion-experiencia-especialidades">
       <div class="experiencia-col">
         <h2>Experiencia Profesional</h2>
+
         <div class="experiencia">
           <h3>Desarrollador Web Fullstack</h3>
           <div class="contenedorLogoExpProf">
@@ -195,6 +206,7 @@
             <strong>DEMQS</strong> para la gestión de pruebas.
           </p>
         </div>
+
         <div class="experiencia">
           <h3>QA & DEV Internship</h3>
           <div class="contenedorLogoExpProf">
@@ -216,6 +228,7 @@
           </p>
         </div>
       </div>
+
       <div class="especialidades-col">
         <h2>Especialidades</h2>
         <div class="especialidades-grid">
@@ -246,6 +259,7 @@
               </p>
             </div>
           </section>
+
           <section class="contenedorTarjetas">
             <div class="especialidad-card">
               <div>
@@ -286,6 +300,7 @@
         </div>
       </section>
     </section>
+
     <section class="Proyectos">
       <h2 class="TituloProyectos">PROYECTOS</h2>
       <div class="SeparadorAcercaDe"></div>
@@ -294,6 +309,7 @@
         he creado, cada proyecto contiene su propio estudio de caso.
       </p>
     </section>
+
     <section class="seccion-sistemas">
       <div class="galeria-sistemas">
         <section class="carrusel-clientes">
@@ -309,6 +325,10 @@
               <img src="img/Proyectos/Serhsi/SisSerhsi.svg" alt="Otro logro" />
               <p>Sistema SERHSI</p>
             </div>
+            <!--             <div class="carrusel-slidee">
+              <img src="img/Proyectos/Is/SisIssteesin.svg" alt="Otro logro" />
+              <p>Sistema ISSSTEESIN</p>
+            </div> -->
           </div>
           <div class="carrusel-buttons">
             <button class="prev">&#10094;</button>
@@ -343,6 +363,11 @@
             <button class="next">&#10095;</button>
           </div>
         </section>
+        <!-- <div class="sistema-item">
+          <img src="img/Logros/1.jpeg" alt="Sistema 2" />
+          <p>Dashboard de clientes Spanna</p>
+        </div> -->
+        <!-- Puedes seguir agregando -->
       </div>
     </section>
     <section class="contenedorEmpresas">
@@ -364,7 +389,7 @@
     <section class="seccion-contacto" id="contacto">
       <h2>Contáctame</h2>
       <form class="formulario-contacto" id="formulario-contacto">
-        <label for="nombre"><i class="fas fa-user"></i> Nombre:</label>
+        <label for="nombre">Nombre</label>
         <input
           type="text"
           id="nombre"
@@ -372,9 +397,8 @@
           required
           placeholder="Tu nombre"
         />
-        <label for="email"
-        ><i class="fas fa-envelope"></i> Correo electrónico:</label
-      >
+
+        <label for="correo">Correo Electrónico</label>
         <input
           type="email"
           id="correo"
@@ -382,7 +406,8 @@
           required
           placeholder="tucorreo@ejemplo.com"
         />
-        <label for="mensaje"><i class="fas fa-comment"></i> Mensaje:</label>
+
+        <label for="mensaje">Mensaje</label>
         <textarea
           id="mensaje"
           name="mensaje"
@@ -390,15 +415,22 @@
           required
           placeholder="Escribe tu mensaje..."
         ></textarea>
+
         <button type="submit">Enviar</button>
+        <!-- <p
+          id="mensaje-confirmacion"
+          style="display: none; color: green; margin-top: 10px"
+        ></p> -->
       </form>
     </section>
+
     <footer class="footer">
       <div class="footer-contenido">
         <div class="footer-nombre">
-          <h3>Carlos Andrés Loaiza</h3>
+          <h3>Carlos Andrés Loaiza.</h3>
           <p>Desarrollador Web | Frontend & Backend</p>
         </div>
+
         <div class="footer-redes">
           <a href="https://www.instagram.com/carlos.loaiza_/" target="_blank">
             <i class="fa-brands fa-instagram"></i>
@@ -420,6 +452,11 @@
           </a>
         </div>
       </div>
+
+      <section>
+        <!-- <img src="/iPad.png" alt=""> -->
+      </section>
+
       <div class="footer-copy">
         <p>&copy; 2025 Carlos Andrés Loaiza. Todos los derechos reservados.</p>
       </div>
@@ -427,6 +464,7 @@
     <button id="botonSubir" title="Volver arriba">
       <i class="fa-solid fa-arrow-up"></i>
     </button>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="module" src="js/portafolio.js"></script>
   </body>
 </html>

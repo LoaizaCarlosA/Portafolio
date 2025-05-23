@@ -1,15 +1,15 @@
 html {
     scroll-behavior: smooth;
-  }
-  
-  body {
+}
+
+body {
     margin: 0px;
     font-family: "Roboto", sans-serif;
     padding-top: 80px;
     background-color: #262626;
-  }
-  
-  header {
+}
+
+header {
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -20,49 +20,49 @@ html {
     background-color: #262626;
     transition: height 0.3s ease;
     align-items: center;
-  }
-  
-  header.scroll-activo .botonRedes i {
+}
+
+header.scroll-activo .botonRedes i {
     font-size: 22px;
-  }
-  
-  .nombreHeader {
+}
+
+.nombreHeader {
     color: #dab217;
     font-family: "Roboto", sans-serif;
     margin-left: 40px;
     font-weight: bold;
     font-size: 45px;
-  }
-  
-  #redesHeader {
+}
+
+#redesHeader {
     opacity: 0;
     display: flex;
     gap: 10px;
     align-items: center;
-  }
-  
-  .ocultar-logo {
+}
+
+.ocultar-logo {
     visibility: hidden;
     margin-left: 28px;
-  }
-  
-  header.scroll-activo #redesHeader {
+}
+
+header.scroll-activo #redesHeader {
     opacity: 1;
     gap: 0px;
     margin-top: 0px;
-  }
-  
-  .ocultar {
+}
+
+.ocultar {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
-  }
-  
-  .contenedorMenu {
+}
+
+.contenedorMenu {
     display: flex;
-  }
-  
-  .contenedorMenuHijo {
+}
+
+.contenedorMenuHijo {
     background-color: #262626;
     color: #856c20;
     font-size: 20px;
@@ -79,15 +79,15 @@ html {
     text-align: center;
     display: flex;
     text-decoration: none;
-  }
-  
-  .contenedorMenuHijo:hover {
+}
+
+.contenedorMenuHijo:hover {
     color: #dab217;
     font-size: 21px;
     transition: 0.3s;
-  }
-  
-  .contenedorMenuHijoContactame {
+}
+
+.contenedorMenuHijoContactame {
     background-color: #262626;
     border-top: 0;
     border-left: 0;
@@ -112,61 +112,102 @@ html {
     text-align: center;
     display: flex;
     text-decoration: none;
-  }
-  
-  .contenedorMenuHijoContactame:hover {
+}
+
+.contenedorMenuHijoContactame:hover {
     color: #262626;
     background-color: #dab217;
-  }
-  
-  .menu-movil-click {
+}
+
+.menu-movil-click {
     display: none;
-  }
-  
-  .separadorMenuHeader {
+}
+
+.separadorMenuHeader {
     height: 39px;
     width: 2px;
     color: white;
     background-color: white;
-  }
-  
-  .contenedorInformacionYFoto {
+}
+
+.contenedorInformacionYFoto {
     padding: 50px;
     display: flex;
     justify-content: space-evenly;
     background-color: #262626;
-  }
-  
-  .contenedorInformacion {
+}
+
+.contenedorInformacion {
     max-width: 850px;
-  }
-  
-  .infoNombre {
+}
+
+.infoNombre {
     display: flex;
     font-size: 50px;
     color: #ffffff;
     margin-bottom: 35px;
+}
+
+.typing {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #000;
+    animation: typing 3.5s steps(50), blink 0.5s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 25ch;
+        /* Ajusta según la longitud del nombre */
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+/* #typed-text {
+    display: inline-block;
+    border-right: 2px solid black;
+    white-space: nowrap;
+    overflow: hidden;
   }
   
-  .parrafoInformacion {
+  .dorado {
+    color: #dab217;
+  }
+  
+  .verde {
+    color: #00ff00;
+  } */
+
+.parrafoInformacion {
     font-size: 25px;
     text-align: justify;
     color: #ffffff;
     line-height: 1.6;
     margin-top: 0px;
-  }
-  
-  .spanAmarillo {
+}
+
+.spanAmarillo {
     color: #dab217;
     font-size: 29px;
-  }
-  
-  .contenedorBotonesRedes {
+}
+
+.contenedorBotonesRedes {
     display: flex;
     margin-top: 40px;
-  }
-  
-  .botonRedes {
+}
+
+.botonRedes {
     color: #856c20;
     margin: 0 0.5rem;
     font-size: 1.4rem;
@@ -180,27 +221,27 @@ html {
     justify-content: center;
     align-items: center;
     display: flex;
-  }
-  
-  .botonRedes:hover {
+}
+
+.botonRedes:hover {
     color: rgb(218, 178, 23);
-  }
-  
-  .logo {
+}
+
+.logo {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  #separadorScroll {
+}
+
+#separadorScroll {
     width: 1px;
     height: 30px;
     background-color: #fff;
     opacity: 0;
     margin: 0 10px;
-  }
-  
-  header.scroll-activo #separadorScroll {
+}
+
+header.scroll-activo #separadorScroll {
     height: 39px;
     width: 2px;
     color: white;
@@ -208,18 +249,28 @@ html {
     opacity: 1;
     gap: 0px;
     margin: 0px 20px;
-  }
-  
-  .imagenPersonal {
-    height: 320px;
-    transition: transform 0.3s ease, width 0.3s ease, top 0.3s ease,
-      left 0.3s ease;
+}
+
+.contenedorImagenPersonal {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.imagenPersonal {
+    height: 280px;
+    transition: transform 0.3s ease, width 0.3s ease, top 0.3s ease, left 0.3s ease;
     position: relative;
     z-index: 1;
     border: 10px solid #856c20;
-  }
-  
-  .imagenPersonal.fixed-header {
+}
+
+.imagenPersonal:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.imagenPersonal.fixed-header {
     position: fixed;
     top: 17px;
     left: 38px;
@@ -229,9 +280,9 @@ html {
     z-index: 1001;
     border: 3px solid rgb(133, 108, 32);
     transform: translateY(0) scale(1);
-  }
-  
-  .imagenEnHeader {
+}
+
+.imagenEnHeader {
     position: absolute;
     top: 13px;
     left: 40px;
@@ -240,44 +291,44 @@ html {
     border-radius: 50%;
     z-index: 1001;
     border: 3px solid rgb(133, 108, 32);
-  }
-  
-  .lineaAmarilla {
+}
+
+.lineaAmarilla {
     background-color: #262626;
     width: 100%;
-  }
-  
-  .AcercaDeMi {
+}
+
+.AcercaDeMi {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
-  }
-  
-  .TituloAcercaDe {
+}
+
+.TituloAcercaDe {
     font-size: 46px;
     margin-bottom: 0px;
     margin-top: 100px;
-  }
-  
-  .SeparadorAcercaDe {
+}
+
+.SeparadorAcercaDe {
     margin-top: 30px;
     margin-bottom: 20px;
     height: 5px;
     width: 3rem;
     background: #dab217;
     border-radius: 5px;
-  }
-  
-  .ParrafoAcercaDe {
+}
+
+.ParrafoAcercaDe {
     font-size: 25px;
     margin: 20px 200px;
     text-align: center;
     line-height: 1.6;
-  }
-  
-  .tituloEmpresas {
+}
+
+.tituloEmpresas {
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 36px;
@@ -288,9 +339,9 @@ html {
     color: white;
     justify-content: center;
     align-items: center;
-  }
-  
-  .formacion {
+}
+
+.formacion {
     border-right: 4px solid #dab217;
     display: flex;
     justify-content: space-evenly;
@@ -300,84 +351,84 @@ html {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     border-radius: 0.5rem;
     transition: transform 0.2s ease;
-  }
-  
-  .formacion h2 {
+}
+
+.formacion h2 {
     font-size: 2rem;
     color: #333;
     display: flex;
     justify-content: center;
     margin-bottom: 0px;
-  }
-  
-  .escuelas {
+}
+
+.escuelas {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
-  }
-  
-  .logo-escuela {
+}
+
+.logo-escuela {
     border-radius: 10px;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-  }
-  
-  .logo-escuela img {
+}
+
+.logo-escuela img {
     max-width: 100px;
     height: auto;
     object-fit: contain;
     margin-bottom: 15px;
     transition: filter 0.3s;
-  }
-  
-  .logo-escuela img:hover {
+}
+
+.logo-escuela img:hover {
     filter: grayscale(0%);
-  }
-  
-  .logo-escuela h3 {
+}
+
+.logo-escuela h3 {
     font-size: 20px;
     margin: 10px 0;
     color: #333;
-  }
-  
-  .logo-escuela p {
+}
+
+.logo-escuela p {
     color: #666;
     font-size: 18ox;
     margin: 4px 0;
-  }
-  
-  .seccion-experiencia-especialidades {
+}
+
+.seccion-experiencia-especialidades {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
     padding: 5rem 4rem;
     background-color: #ffffff;
-  }
-  
-  .experiencia-col,
-  .especialidades-col {
+}
+
+.experiencia-col,
+.especialidades-col {
     flex: 1 1 45%;
     min-width: 300px;
     justify-content: space-between;
     align-items: center;
     display: flex;
     flex-direction: column;
-  }
-  
-  .experiencia-col h2,
-  .especialidades-col h2 {
+}
+
+.experiencia-col h2,
+.especialidades-col h2 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
     border-bottom: 3px solid #dab217;
     display: inline-block;
     padding-bottom: 0.5rem;
-  }
-  
-  .experiencia {
+}
+
+.experiencia {
     background-color: #f9f9f9;
     border-left: 4px solid #dab217;
     padding: 1.7rem;
@@ -385,51 +436,54 @@ html {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     border-radius: 0.5rem;
     transition: transform 0.2s ease;
-  }
-  
-  .experiencia:hover {
+}
+
+.experiencia:hover {
     transform: translateY(-4px);
-  }
-  
-  .experiencia h3 {
+}
+
+.experiencia h3 {
     margin: 0;
     font-size: 1.3rem;
     color: #2c3e50;
-  }
-  
-  .experiencia h4 {
+}
+
+.experiencia h4 {
     font-size: 1rem;
     color: #7f8c8d;
     margin-top: 0.2rem;
     margin-bottom: 0.8rem;
-  }
-  
-  .experiencia p {
+}
+
+.experiencia p {
     font-size: 1rem;
     color: #333;
     line-height: 1.6;
     margin-top: 8px;
-  }
-  
-  .experiencia h4 span {
+}
+
+.experiencia h4 span {
     font-weight: normal;
-  }
-  .contenedorLogoExpProf {
+}
+
+.contenedorLogoExpProf {
     margin-top: 7px;
     display: flex;
     align-items: center;
     text-align: center;
-  }
-  .tiempoExp {
+}
+
+.tiempoExp {
     font-size: 1rem;
     color: #7f8c8d;
     margin-left: 7px;
-  }
-  .LogoIsssteesinExpProf {
+}
+
+.LogoIsssteesinExpProf {
     width: 120px;
-  }
-  
-  .especialidades-grid {
+}
+
+.especialidades-grid {
     gap: 1.5rem;
     flex-direction: column;
     justify-content: center;
@@ -439,32 +493,32 @@ html {
     width: 100%;
     margin-top: 15px;
     margin-bottom: 25px;
-  }
-  
-  .contenedorTarjetas {
+}
+
+.contenedorTarjetas {
     width: 100%;
     display: flex;
     justify-content: space-around;
-  }
-  
-  .iconoCard {
+}
+
+.iconoCard {
     height: 100px;
-  }
-  
-  .iconoCardOp {
+}
+
+.iconoCardOp {
     height: 115px;
-  }
-  
-  .SeparadorCard {
+}
+
+.SeparadorCard {
     margin-top: 10px;
     margin-bottom: 10px;
     height: 5px;
     width: 2rem;
     background: #dab217;
     border-radius: 5px;
-  }
-  
-  .especialidad-card {
+}
+
+.especialidad-card {
     background-color: #262626;
     padding: 1.5rem;
     border-radius: 0.75rem;
@@ -477,270 +531,263 @@ html {
     align-items: center;
     display: flex;
     flex-direction: column;
-  }
-  
-  .especialidad-card:hover {
+}
+
+.especialidad-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-  }
-  
-  .especialidad-card i {
+}
+
+.especialidad-card i {
     font-size: 2rem;
     color: #dab217;
     margin-bottom: 0.5rem;
-  }
-  
-  .especialidad-card h4 {
+}
+
+.especialidad-card h4 {
     font-size: 20px;
     margin-bottom: 0.5rem;
     color: #f9f9f9;
-  }
-  
-  .especialidad-card p {
+}
+
+.especialidad-card p {
     font-size: 1rem;
     color: #f9f9f9;
     line-height: 1.4;
-  }
-  
-  .contenedorEmpresas {
+}
+
+.contenedorEmpresas {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  
-  .clientes {
+}
+
+.clientes {
     background-color: #ffffff;
-  }
-  
-  .clientes h2 {
+}
+
+.clientes h2 {
     font-size: 2rem;
     margin-bottom: 30px;
-  }
-  
-  .logos-clientes {
+}
+
+.logos-clientes {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 80px;
     align-items: center;
     margin: 70px 100px;
-  }
-  
-  .logos-clientes img {
+}
+
+.logos-clientes img {
     height: auto;
     filter: grayscale(100%);
     transition: filter 0.3s, transform 0.3s;
-  }
-  
-  .logos-clientes img:hover {
+}
+
+.logos-clientes img:hover {
     filter: grayscale(0%);
     transform: scale(1.2);
-  }
-  
-  #Auplex {
+}
+
+#Auplex {
     max-width: 210px;
-  }
-  
-  #Avicor {
+}
+
+#Avicor {
     max-width: 210px;
-  }
-  
-  #Bahk {
+}
+
+#Bahk {
     max-width: 170px;
-  }
-  
-  #ConLocal {
+}
+
+#ConLocal {
     max-width: 160px;
-  }
-  
-  #Compania {
+}
+
+#Compania {
     max-width: 170px;
-  }
-  
-  #MarNegro {
+}
+
+#MarNegro {
     max-width: 230px;
-  }
-  
-  #Serhsi {
+}
+
+#Serhsi {
     max-width: 100px;
-  }
-  
-  #Spanna {
+}
+
+#Spanna {
     max-width: 150px;
-  }
-  
-  #YamYam {
+}
+
+#YamYam {
     max-width: 90px;
-  }
-  
-  .seccion-sistemas {
+}
+
+.seccion-sistemas {
     padding: 80px 20px;
     background-color: #ffffff;
     text-align: center;
-  }
-  
-  .Proyectos {
+}
+
+.Proyectos {
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     background-color: #ffffff;
-  }
-  
-  .TituloProyectos {
+}
+
+.TituloProyectos {
     font-size: 46px;
     margin-bottom: 0px;
-  }
-  
-  .intro-sistemas {
+}
+
+.intro-sistemas {
     font-size: 25px;
     margin: 20px 200px;
     text-align: center;
     line-height: 1.6;
-  }
-  
-  .galeria-sistemas {
+}
+
+.galeria-sistemas {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
     margin-top: 2rem;
-  }
-  
-  .sistema-item img {
+}
+
+.sistema-item img {
     width: 100%;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-  .sistema-item p {
+}
+
+.sistema-item p {
     margin-top: 0.5rem;
     font-weight: 500;
     color: #444;
-  }
-  
-  .contenedor-carruseles {
+}
+
+.contenedor-carruseles {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 20px;
     margin: 40px auto;
     max-width: 1200px;
-  }
-  
-  .carrusel-logros {
+}
+
+.carrusel-logros {
     flex: 1 1 45%;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 10px;
     text-align: center;
-  }
-  
-  .carrusel-container {
+}
+
+.carrusel-container {
     position: relative;
     overflow: hidden;
-  }
-  
-  .carrusel-slidee {
+}
+
+.carrusel-slidee {
     display: none;
-  }
-  
-  .carrusel-slidee.active {
+}
+
+.carrusel-slidee.active {
     display: block;
-  }
-  
-  .carrusel-slidee img {
+}
+
+.carrusel-slidee img {
     width: 100%;
     /* height: 406px; */
     object-fit: cover;
     border-radius: 10px;
-  }
-  
-  .carrusel-slidee p {
+}
+
+.carrusel-slidee p {
     background-color: rgb(249, 249, 249);
     margin: 0;
     padding: 12px;
     font-weight: bold;
     color: #222;
     border-radius: 0 0 10px 10px;
-  }
-  
-  .carrusel-slide {
+}
+
+.carrusel-slide {
     display: none;
-  }
-  
-  .carrusel-slide.active {
+}
+
+.carrusel-slide.active {
     display: block;
-  }
-  
-  .carrusel-slide img {
+}
+
+.carrusel-slide img {
     width: 100%;
     object-fit: cover;
     border-radius: 10px;
-  }
-  
-  .carrusel-slide p {
+}
+
+.carrusel-slide p {
     background-color: rgb(249, 249, 249);
     margin: 0;
     padding: 12px;
     font-weight: bold;
     color: #222;
     border-radius: 0 0 10px 10px;
-  }
-  
-  .carrusel-buttons {
+}
+
+.carrusel-buttons {
     margin-top: 10px;
-  }
-  
-  .carrusel-buttons button {
+}
+
+.carrusel-buttons button {
     padding: 6px 12px;
     font-size: 18px;
     background-color: #f5c518;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  .seccion-contacto {
+}
+
+.seccion-contacto {
     padding: 5rem;
     background-color: #f9f9f9;
     text-align: center;
-    background: linear-gradient(
-          to right,
-          rgba(245, 245, 245, 0.8),
-          rgba(245, 245, 245, 0.8)
-        )
-        center center / cover,
-      url(../img/fondo-gris.svg);
-  }
-  
-  .seccion-contacto h2 {
+    background: linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)) center center / cover, url(../img/fondo-gris.svg);
+}
+
+.seccion-contacto h2 {
     margin-bottom: 1rem;
     margin-top: 0px;
     font-size: 46px;
-  }
-  
-  .formulario-contacto {
+}
+
+.formulario-contacto {
     max-width: 600px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     font-size: 20px;
-  }
-  
-  .formulario-contacto input,
-  .formulario-contacto textarea {
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
     padding: 0.75rem;
     border: 1px solid #dab217;
     border-radius: 8px;
     font-size: 1rem;
-    font-family: "Roboto", sans-serif;
-  }
-  
-  .formulario-contacto button {
+}
+
+.formulario-contacto button {
     padding: 0.75rem;
     background-color: #dab217;
     color: #000;
@@ -749,13 +796,13 @@ html {
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  .formulario-contacto button:hover {
+}
+
+.formulario-contacto button:hover {
     background-color: #e0a800;
-  }
-  
-  #botonSubir {
+}
+
+#botonSubir {
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -772,334 +819,329 @@ html {
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     transition: opacity 0.3s ease;
-  }
-  
-  #botonSubir i {
+}
+
+#botonSubir i {
     font-size: 20px;
-  }
-  label {
-    font-weight: 600;
-    color: #555;
-    display: flex;
-    gap: 0.7rem;
-    font-size: 18px;
-    margin-top: 10px;
-  }
-  .footer {
+}
+
+.footer {
     background-color: #222;
     color: #fff;
     padding: 2rem;
     text-align: center;
-  }
-  
-  .footer-contenido {
+}
+
+.footer-contenido {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-  }
-  
-  .footer-nombre h3 {
+}
+
+.footer-nombre h3 {
     margin: 0px 0px 10px;
     font-size: 1.5rem;
-  }
-  
-  .footer-nombre p {
+}
+
+.footer-nombre p {
     margin: 0;
     font-size: 1rem;
     color: #ccc;
-  }
-  
-  .footer-redes a {
+}
+
+.footer-redes a {
     color: #dab217;
     margin: 0 0.5rem;
     font-size: 1.4rem;
     transition: color 0.3s ease;
     text-decoration: none;
-  }
-  
-  .footer-redes a:hover {
+}
+
+.footer-redes a:hover {
     color: #fff;
-  }
-  
-  .footer-copy {
+}
+
+.footer-copy {
     margin-top: 1rem;
     font-size: 0.9rem;
     color: #888;
-  }
-  
-  @media (max-width: 768px) {
+}
+
+
+@media (max-width: 768px) {
     .infoNombre {
-      font-size: 28px;
+        font-size: 28px;
     }
-  
+
     .contenedorMenu {
-      display: none;
+        display: none;
     }
-  
+
     .contenedorMenuHijo,
     .contenedorMenuHijoContactame,
     #cambiarIdioma {
-      width: 100%;
-      text-align: center;
+        width: 100%;
+        text-align: center;
     }
-  
+
     .contenedorInformacionYFoto {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 1.5rem 1rem;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1.5rem 1rem;
     }
-  
+
     .contenedorInformacion {
-      padding: 0 1rem;
+        padding: 0 1rem;
     }
-  
+
     .contenedorImagenPersonal {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-  
+
     .imagenPersonal {
-      margin-top: 1rem;
+
+        margin-top: 1rem;
     }
-  
+
     .contenedorBotonesRedes {
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-      margin-top: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1rem;
     }
-  
+
     .botonRedes {
-      width: 45px;
-      height: 45px;
-      font-size: 1.3rem;
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
     }
-  
+
     .formacion {
-      padding: 1rem;
-      flex-direction: column;
-      gap: 1.5rem;
+        padding: 1rem;
+        flex-direction: column;
+        gap: 1.5rem;
     }
-  
+
     .formacion h2 {
-      margin-top: 0px;
-      margin-bottom: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
-  
+
     .clientes {
-      margin-top: 30px;
+        margin-top: 30px;
     }
-  
+
     .logo-escuela img {
-      width: 120px;
+        width: 120px;
     }
-  
+
     .logos-clientes {
-      grid-template-columns: repeat(3, 1fr);
-      margin-top: 20px;
-      gap: 50px;
-      margin: 0px;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 20px;
+        gap: 50px;
+        margin: 0px;
     }
-  
+
     .logos-clientes img {
-      width: 100px;
+        width: 100px;
     }
-  
+
     .carrusel-slide img {
-      max-width: 100%;
-      height: auto;
-      margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
     }
-  
+
     .carrusel-buttons button {
-      font-size: 1rem;
-      padding: 0.4rem 0.8rem;
+        font-size: 1rem;
+        padding: 0.4rem 0.8rem;
     }
-  
+
     h1,
     h2,
     h3 {
-      font-size: 1.2rem;
+        font-size: 1.2rem;
     }
-  
+
     .section-title,
     .tituloEmpresas {
-      text-align: center;
-      font-size: 1.4rem;
-      margin: 0px 50px;
+        text-align: center;
+        font-size: 1.4rem;
+        margin: 0px 50px;
     }
-  }
-  
-  @media (max-width: 440px) {
+}
+
+@media (max-width: 440px) {
     header {
-      padding-top: 0px;
-      height: 80px;
+        padding-top: 0px;
+        height: 80px;
     }
-  
+
     .menu-movil-click {
-      width: 10%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin-right: 30px;
+        width: 10%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 30px;
     }
-  
+
     .barra {
-      width: 100%;
-      height: 5px;
-      background: white;
-      margin: 2px 0;
-      transition: all 0.3s;
-      border-radius: 2px;
+        width: 100%;
+        height: 5px;
+        background: white;
+        margin: 2px 0;
+        transition: all 0.3s;
+        border-radius: 2px;
     }
-  
+
     .contenedorInformacionYFoto {
-      flex-direction: column-reverse;
-      height: 620px;
+        flex-direction: column-reverse;
+        height: 620px;
     }
-  
+
     .ocultar-logo {
-      margin-left: 15px;
+        margin-left: 15px;
     }
-  
+
     .imagenPersonal {
-      margin-top: 0px;
-      height: 300px;
+        margin-top: 0px;
+        height: 250px;
     }
-  
+
     .imagenPersonal.fixed-header {
-      top: 17px;
-      left: 20px;
+        top: 17px;
+        left: 20px;
     }
-  
+
     .infoNombre {
-      font-size: 24px;
-      margin-bottom: 20px;
+        font-size: 24px;
+        margin-bottom: 20px;
     }
-  
+
     .parrafoInformacion {
-      font-size: 21px;
-      text-align: justify;
-      color: #ffffff;
-      line-height: 1.6;
-      margin-top: 0px;
-      margin: 1remw;
+        font-size: 21px;
+        text-align: justify;
+        color: #ffffff;
+        line-height: 1.6;
+        margin-top: 0px;
+        margin: 1remw;
     }
-  
+
     .spanAmarillo {
-      color: #dab217;
-      font-size: 23px;
+        color: #dab217;
+        font-size: 23px;
     }
-  
+
     .botonRedes {
-      margin: 0px 5px 0px 5px;
-      width: 30px;
-      height: 30px;
-      font-size: 30px;
-      justify-content: center;
-      align-items: center;
-      display: flex;
+        margin: 0px 5px 0px 5px;
+        width: 30px;
+        height: 30px;
+        font-size: 30px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
     }
-  
+
     .TituloAcercaDe {
-      margin-top: 40px;
-      font-size: 40px;
+        margin-top: 40px;
+        font-size: 40px;
     }
-  
+
     .ParrafoAcercaDe {
-      font-size: 21px;
-      margin: 20px 1rem;
-      line-height: 1.5;
+        font-size: 21px;
+        margin: 20px 1rem;
+        line-height: 1.5;
     }
-  
+
     .seccion-experiencia-especialidades {
-      padding: 2rem 1rem;
-      gap: 0rem;
+        padding: 2rem 1rem;
+        gap: 0rem;
     }
-  
+
     .experiencia-col h2 {
-      margin-top: 10px;
+        margin-top: 10px;
     }
-  
+
     .especialidades-col h2 {
-      margin-top: 10px;
-      margin-bottom: 0rem;
+        margin-top: 10px;
+        margin-bottom: 0rem;
     }
-  
+
     .experiencia {
-      padding: 1rem 2.1rem;
+        padding: 1rem 2.1rem;
     }
-  
+
     .contenedorTarjetas {
-      flex-direction: column;
-      align-items: center;
-      width: 90%;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
     }
-  
+
     .especialidad-card {
-      margin-top: 15px;
-      width: 100%;
+        margin-top: 15px;
+        width: 100%;
+
     }
-  
+
     .especialidades-grid {
-      gap: 0rem;
+        gap: 0rem;
     }
-  
+
     .TituloProyectos {
-      margin-top: 30px;
-      font-size: 40px;
+        margin-top: 30px;
+        font-size: 40px;
     }
-  
+
     .intro-sistemas {
-      font-size: 21px;
-      margin: 20px 1rem;
-      line-height: 1.5;
+        font-size: 21px;
+        margin: 20px 1rem;
+        line-height: 1.5;
     }
-  
+
     .seccion-sistemas {
-      padding: 1rem 1rem 1rem 1rem;
+        padding: 1rem 1rem 1rem 1rem;
     }
-  
+
     .carrusel-buttons {
-      display: none;
+        display: none;
     }
-  
+
     .tituloEmpresas {
-      height: 110px;
+        height: 110px;
     }
-  
+
     .clientes {
-      padding: 30px 0px;
-      margin: 0;
+        padding: 30px 0px;
+        margin: 0;
     }
-  
+
     #YamYam {
-      max-width: 70px;
+        max-width: 70px;
     }
-  
+
     #Serhsi {
-      max-width: 80px;
+        max-width: 80px;
     }
-  
+
     .logos-clientes {
-      gap: 40px;
-      margin: 1rem;
+        gap: 40px;
+        margin: 1rem;
     }
-  
+
     .logos-clientes img {
-      filter: grayscale(0%);
+        filter: grayscale(0%);
     }
-  
+
     .seccion-contacto h2 {
-      margin-top: 0px;
+        margin-top: 0px;
     }
-  
+
     .seccion-contacto {
-      padding: 3rem 1rem;
+        padding: 3rem 1rem;
     }
-  }
-  
+}
