@@ -81,7 +81,10 @@
           data-es="Hola, Soy Carlos Andrés Loaiza"
           data-en="Hi, I'm Carlos Andrés Loaiza"
         >
-          Hola, <span class="typing" style="margin-left: 10px;">Soy Carlos<span style="color: #dab217;"> Andrés</span> Loaiza.</span> 
+          Hola,
+          <span class="typing" style="margin-left: 10px"
+            >Soy Carlos<span style="color: #dab217"> Andrés</span> Loaiza.</span
+          >
         </h1>
         <!-- <h1 class="infoNombre">
           Hola, Soy 
@@ -389,7 +392,7 @@
     <section class="seccion-contacto" id="contacto">
       <h2>Contáctame</h2>
       <form class="formulario-contacto" id="formulario-contacto">
-        <label for="nombre">Nombre</label>
+        <label class="label" for="nombre"><i class="fas fa-user"></i> Nombre:</label>
         <input
           type="text"
           id="nombre"
@@ -398,7 +401,9 @@
           placeholder="Tu nombre"
         />
 
-        <label for="correo">Correo Electrónico</label>
+        <label class="label" for="email"
+          ><i class="fas fa-envelope"></i> Correo electrónico:</label
+        >
         <input
           type="email"
           id="correo"
@@ -407,7 +412,7 @@
           placeholder="tucorreo@ejemplo.com"
         />
 
-        <label for="mensaje">Mensaje</label>
+        <label class="label" for="mensaje"><i class="fas fa-comment"></i> Mensaje:</label>
         <textarea
           id="mensaje"
           name="mensaje"
