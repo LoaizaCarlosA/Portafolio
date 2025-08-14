@@ -875,10 +875,10 @@ header.scroll-activo #separadorScroll {
   margin-bottom: 0px;
 }
 .seccion-comentarios h2 {
-    font-size: 25px;
-    margin-bottom: 0px;
-    margin-top: 5px;
-    font-weight: 100;
+  font-size: 25px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+  font-weight: 100;
 }
 .contenedor-testimonios {
   display: flex;
@@ -926,7 +926,7 @@ header.scroll-activo #separadorScroll {
 .carrusel-track {
   display: flex;
   gap: 20px;
-  animation: scrollTestimonios 10s linear infinite;
+  animation: scrollTestimonios 20s linear infinite;
 }
 
 .testimonial-card {
@@ -955,7 +955,7 @@ header.scroll-activo #separadorScroll {
 .seccion-contacto h1 {
   margin-bottom: 0rem;
   margin-top: 0px;
-  font-size: 36px;
+  font-size: 34px;
 }
 
 .seccion-contacto h2 {
@@ -1097,6 +1097,7 @@ header.scroll-activo #separadorScroll {
   align-items: center;
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .footer-info h3,
@@ -1268,6 +1269,10 @@ header.scroll-activo #separadorScroll {
     border-radius: 2px;
   }
 
+  .tecnologia-card {
+    margin-bottom: 10px;
+  }
+
   .contenedorInformacionYFoto {
     flex-direction: column-reverse;
     height: 620px;
@@ -1280,6 +1285,16 @@ header.scroll-activo #separadorScroll {
   .imagenPersonal {
     margin-top: 0px;
     height: 250px;
+  }
+
+  .testimonial-card {
+    min-width: 10%; /* que ocupe menos del 100% */
+  }
+
+  .carrusel-track {
+    display: flex;
+    gap: 20px;
+    animation: scrollTestimonios 2s linear infinite;
   }
 
   .imagenPersonal.fixed-header {
@@ -1300,10 +1315,21 @@ header.scroll-activo #separadorScroll {
     margin-top: 0px;
     margin: 1remw;
   }
-
+  .seccion-comentarios h1 {
+    font-size: 23px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  .seccion-comentarios h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
   .spanAmarillo {
     color: #dab217;
     font-size: 23px;
+  }
+  .carrusel-testimonios {
+    padding: 10px 0;
   }
 
   .botonRedes {
@@ -1319,6 +1345,7 @@ header.scroll-activo #separadorScroll {
   .TituloAcercaDe {
     margin-top: 40px;
     font-size: 40px;
+    margin-bottom: 15px;
   }
 
   .ParrafoAcercaDe {
@@ -1330,6 +1357,17 @@ header.scroll-activo #separadorScroll {
   .seccion-experiencia-especialidades {
     padding: 2rem 1rem;
     gap: 0rem;
+  }
+
+  .contenedor-testimonios {
+    overflow-x: auto;
+    animation: none; /* sin animación en móvil */
+    scroll-snap-type: x mandatory;
+  }
+
+  .testimonial-card {
+    min-width: 80%; /* muestra 1 tarjeta completa y un poco de la siguiente */
+    scroll-snap-align: start;
   }
 
   .experiencia-col h2 {
@@ -1363,12 +1401,26 @@ header.scroll-activo #separadorScroll {
   .TituloProyectos {
     margin-top: 30px;
     font-size: 40px;
+    margin-bottom: 15px;
   }
 
   .intro-sistemas {
-    font-size: 21px;
+    font-size: 20px;
     margin: 20px 1rem;
     line-height: 1.5;
+    margin-top: 7px;
+  }
+
+  .seccion-tecnologias {
+    padding: 2rem 1rem;
+  }
+  .TituloSeccion {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+  .grid-tecnologias {
+    margin-top: 0px;
+    gap: 10px;
   }
 
   .seccion-sistemas {
@@ -1409,9 +1461,15 @@ header.scroll-activo #separadorScroll {
     filter: grayscale(0%);
   }
 
-  .seccion-contacto h2 {
+  .seccion-contacto h1 {
+    margin-bottom: 0rem;
     margin-top: 0px;
-    font-size: 28px;
+    font-size: 21px;
+  }
+
+  .seccion-contacto h2 {
+    margin-top: 7px;
+    font-size: 20px;
   }
 
   .seccion-contacto {
@@ -1423,5 +1481,22 @@ header.scroll-activo #separadorScroll {
   }
   .SeparadorAcercaDe {
     margin-top: 0px;
+  }
+  .intro-tecnologias {
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+
+  .footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 30px;
+  }
+
+  .footer-startup h4 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: #dab217;
   }
 }
