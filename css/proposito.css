@@ -1,0 +1,202 @@
+/* GLOBAL */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+.section {
+/*   width: 100%; */
+  height: 100vh; /* ocupa siempre la pantalla completa */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  scroll-snap-align: start; /* ← se ancla al inicio */
+  scroll-snap-stop: always; /* ← no se salta secciones rápido */
+  position: relative;
+  padding: 20px;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  z-index: 20;
+  opacity: 1;
+  transition: opacity 0.7s ease, transform 0.3s ease;
+}
+
+header.visible {
+  opacity: 1;
+}
+
+header img {
+  width: 90px;
+  transition: transform 0.3s ease;
+}
+
+/* PORTADA */
+.portada {
+  flex-direction: column;
+  background: #010c28;
+}
+
+#miImagen {
+  max-width: 50%;
+  max-height: 60%;
+  object-fit: contain;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.intro-text {
+  margin-top: 40px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease;
+}
+
+.intro-text h1 {
+  font-size: 2.5rem;
+}
+
+.intro-text p {
+  font-size: 1.2rem;
+  color: #444;
+}
+
+/* PROPÓSITO SECCIONES */
+/* SECCIÓN PROPÓSITOS */
+.propositos {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  padding: 40px;
+  text-align: center;
+  flex-wrap: wrap; /* se ajusta en pantallas pequeñas */
+}
+
+.propositos .proposito {
+  flex: 1;
+  min-width: 250px;
+  max-width: 350px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.propositos .proposito:hover {
+  transform: translateY(-8px);
+}
+
+.propositos i {
+  font-size: 3rem;
+  color: #4576fe;
+  margin-bottom: 15px;
+}
+
+.propositos h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.propositos p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+
+.fade-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* CTA */
+.cta {
+  background: #f7f7f7;
+  flex-direction: column;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #4576fe;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #e67e22;
+}
+
+/* NAVEGACIÓN LATERAL */
+.side-nav {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 30;
+}
+
+.side-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.side-nav li {
+  margin: 12px 0;
+}
+
+.side-nav a {
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: #bbb;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.side-nav a.active,
+.side-nav a:hover {
+  background: #4576fe;
+  transform: scale(1.2);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  #miImagen {
+    max-width: 80%;
+  }
+
+  .intro-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .proposito h2 {
+    font-size: 1.5rem;
+  }
+
+  .proposito p {
+    font-size: 1rem;
+  }
+}

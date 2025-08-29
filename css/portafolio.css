@@ -1152,6 +1152,9 @@ header.scroll-activo #separadorScroll {
   #cambiarIdioma {
     width: 100%;
     text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 15px;
   }
 
   /*   .contenedorInformacionYFoto {
@@ -1286,6 +1289,7 @@ header.scroll-activo #separadorScroll {
   .imagenPersonal {
     margin-top: 0px;
     height: 250px;
+    margin-bottom: 30px;
   }
 
   .testimonial-card {
@@ -1326,7 +1330,7 @@ header.scroll-activo #separadorScroll {
   }
   .spanAmarillo {
     color: white;
-    font-size: 23px;
+    font-size: 20px;
   }
   .carrusel-testimonios {
     padding: 10px 0;
