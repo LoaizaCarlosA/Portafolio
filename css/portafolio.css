@@ -17,7 +17,7 @@ header {
   width: 100%;
   height: 80px;
   z-index: 1000;
-  background-color: #262626;
+  background-color: #010c28;
   transition: height 0.3s ease;
   align-items: center;
 }
@@ -63,8 +63,8 @@ header.scroll-activo #redesHeader {
 }
 
 .contenedorMenuHijo {
-  background-color: #262626;
-  color: #856c20;
+  background-color: #010c28;
+  color: #e0e0e0;
   font-size: 20px;
   margin-right: 40px;
   margin-left: 40px;
@@ -82,7 +82,7 @@ header.scroll-activo #redesHeader {
 }
 
 .contenedorMenuHijo:hover {
-  color: #dab217;
+  color: #4576ff;
   font-size: 21px;
   transition: 0.3s;
 }
@@ -90,7 +90,7 @@ header.scroll-activo #redesHeader {
 .seccion-tecnologias {
   padding: 80px 70px;
   text-align: center;
-  background-color: #262626;
+  background-color: #010c28;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -125,7 +125,7 @@ header.scroll-activo #redesHeader {
 }
 
 .tecnologia-card i {
-  color: #dab217;
+  color: #4576ff;
   margin-bottom: 10px;
   transition: color 0.2s;
   animation: vibrar 1s infinite;
@@ -166,14 +166,14 @@ header.scroll-activo #redesHeader {
 }
 
 .contenedorMenuHijoContactame {
-  background-color: #262626;
+  background-color: #010c28;
   border-top: 0;
   border-left: 0;
   border-right: 0;
-  color: #dab217;
+  color: #e0e0e0;
   margin-right: 40px;
   margin-left: 40px;
-  border: 2px solid #dab217;
+  border: 2px solid #4576ff;
   border-radius: 30px;
   font-size: 20px;
   width: 150px;
@@ -193,8 +193,8 @@ header.scroll-activo #redesHeader {
 }
 
 .contenedorMenuHijoContactame:hover {
-  color: #262626;
-  background-color: #dab217;
+  color: #010c28;
+  background-color: #4576ff;
 }
 
 .menu-movil-click {
@@ -205,14 +205,14 @@ header.scroll-activo #redesHeader {
   height: 39px;
   width: 2px;
   color: white;
-  background-color: white;
+  background-color: #4576fe;
 }
 
 .contenedorInformacionYFoto {
   padding: 50px;
   display: flex;
   justify-content: space-evenly;
-  background-color: #262626;
+  background-color: #010c28;
 }
 
 .contenedorInformacion {
@@ -222,7 +222,7 @@ header.scroll-activo #redesHeader {
 .infoNombre {
   display: flex;
   font-size: 50px;
-  color: #ffffff;
+  color: #e0e0e0;
   margin-bottom: 35px;
 }
 
@@ -269,24 +269,46 @@ header.scroll-activo #redesHeader {
 .parrafoInformacion {
   font-size: 25px;
   text-align: justify;
-  color: #ffffff;
+  color: #e0e0e0;
   line-height: 1.6;
   margin-top: 0px;
 }
 
+.ContenedorImgFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgFooter {
+  width: 100px;
+}
+
 .spanAmarillo {
-  color: #dab217;
+  color: white;
   font-size: 30px;
   font-style: italic;
 }
 
 .contenedorBotonesRedes {
+  /* justify-content: center; */
+  align-items: center;
+  justify-content: space-between;
   display: flex;
-  margin-top: 40px;
+}
+
+.BotonesRedes {
+  display: flex;
+}
+
+.logotipoCAL {
+  position: absolute;
+  top: 15px;
+  width: 100px;
+  left: 70px;
 }
 
 .botonRedes {
-  color: #856c20;
+  color: #e0e0e0;
   margin: 0 0.5rem;
   font-size: 1.4rem;
   transition: color 0.3s ease;
@@ -302,7 +324,7 @@ header.scroll-activo #redesHeader {
 }
 
 .botonRedes:hover {
-  color: rgb(218, 178, 23);
+  color: #4576ff;
 }
 
 .logo {
@@ -323,7 +345,7 @@ header.scroll-activo #separadorScroll {
   height: 39px;
   width: 2px;
   color: white;
-  background-color: white;
+  background-color: #4475fc;
   opacity: 1;
   gap: 0px;
   margin: 0px 20px;
@@ -336,12 +358,30 @@ header.scroll-activo #separadorScroll {
 }
 
 .imagenPersonal {
-  height: 280px;
-  transition: transform 0.3s ease, width 0.3s ease, top 0.3s ease,
+  height: 300px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: 20px;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  /*   transition: transform 0.3s ease, width 0.3s ease, top 0.3s ease,
     left 0.3s ease;
   position: relative;
   z-index: 1;
-  border: 10px solid #856c20;
+  border: 10px solid #856c20; */
 }
 
 .imagenPersonal:hover {
@@ -350,7 +390,8 @@ header.scroll-activo #separadorScroll {
 }
 
 .imagenPersonal.fixed-header {
-  position: fixed;
+  display: none;
+  /*   position: fixed;
   top: 17px;
   left: 38px;
   width: 40px;
@@ -358,7 +399,7 @@ header.scroll-activo #separadorScroll {
   border-radius: 50%;
   z-index: 1001;
   border: 3px solid rgb(133, 108, 32);
-  transform: translateY(0) scale(1);
+  transform: translateY(0) scale(1); */
 }
 
 .imagenEnHeader {
@@ -373,7 +414,7 @@ header.scroll-activo #separadorScroll {
 }
 
 .lineaAmarilla {
-  background-color: #262626;
+  background-color: #010c28;
   width: 100%;
 }
 
@@ -396,7 +437,7 @@ header.scroll-activo #separadorScroll {
   margin-bottom: 20px;
   height: 5px;
   width: 3rem;
-  background: #dab217;
+  background: #4576ff;
   border-radius: 5px;
 }
 
@@ -412,7 +453,7 @@ header.scroll-activo #separadorScroll {
   margin-bottom: 0px;
   font-size: 36px;
   height: 100px;
-  background-color: rgb(36 36 36 / 96%);
+  background-color: #010c28;
   width: 100%;
   display: flex;
   color: white;
@@ -421,7 +462,7 @@ header.scroll-activo #separadorScroll {
 }
 
 .formacion {
-  border-right: 4px solid #dab217;
+  border-right: 4px solid #4576ff;
   display: flex;
   justify-content: space-evenly;
   padding: 0px 20px;
@@ -502,14 +543,14 @@ header.scroll-activo #separadorScroll {
 .especialidades-col h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
-  border-bottom: 3px solid #dab217;
+  border-bottom: 3px solid #4576ff;
   display: inline-block;
   padding-bottom: 0.5rem;
 }
 
 .experiencia {
   background-color: #f9f9f9;
-  border-left: 4px solid #dab217;
+  border-left: 4px solid #4576ff;
   padding: 1.7rem;
   margin-bottom: 1.5rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -590,15 +631,14 @@ header.scroll-activo #separadorScroll {
 
 .SeparadorCard {
   margin-top: 10px;
-  margin-bottom: 10px;
   height: 5px;
   width: 2rem;
-  background: #dab217;
+  background: #1746ea;
   border-radius: 5px;
 }
 
 .especialidad-card {
-  background-color: #262626;
+  background-color: #010c28;
   padding: 1.5rem;
   border-radius: 0.75rem;
   text-align: center;
@@ -838,7 +878,7 @@ header.scroll-activo #separadorScroll {
 .carrusel-buttons button {
   padding: 6px 12px;
   font-size: 18px;
-  background-color: #f5c518;
+  background-color: #4576ff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -963,7 +1003,7 @@ header.scroll-activo #separadorScroll {
   margin-top: 10px;
   font-size: 24px;
   font-weight: 100;
-  color: #856c20;
+  color: #02229d;
 }
 
 .formulario-contacto {
@@ -978,7 +1018,7 @@ header.scroll-activo #separadorScroll {
 .formulario-contacto input,
 .formulario-contacto textarea {
   padding: 0.75rem;
-  border: 1px solid #dab217;
+  border: 1px solid #4576ff;
   border-radius: 8px;
   font-size: 1rem;
   font-family: "Roboto", sans-serif;
@@ -986,8 +1026,8 @@ header.scroll-activo #separadorScroll {
 
 .formulario-contacto button {
   padding: 0.75rem;
-  background-color: #dab217;
-  color: #000;
+  background-color: #010c28;
+  color: #e0e0e0;
   border: none;
   border-radius: 8px;
   font-size: 1rem;
@@ -996,7 +1036,8 @@ header.scroll-activo #separadorScroll {
 }
 
 .formulario-contacto button:hover {
-  background-color: #e0a800;
+  background-color: #4576ff;
+  color: #010c28;
 }
 
 #botonSubir {
@@ -1004,8 +1045,8 @@ header.scroll-activo #separadorScroll {
   bottom: 30px;
   right: 30px;
   z-index: 1000;
-  background-color: #dab217;
-  color: #000;
+  background-color: #4576ff;
+  color: #010c28;
   border: none;
   border-radius: 50%;
   width: 50px;
@@ -1022,20 +1063,6 @@ header.scroll-activo #separadorScroll {
   font-size: 20px;
 }
 
-/* .footer {
-  background-color: #222;
-  color: #fff;
-  padding: 2rem;
-  text-align: center;
-}
-
-.footer-contenido {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-} */
-
 .Proyecto {
   font-size: 36px;
 }
@@ -1050,37 +1077,8 @@ header.scroll-activo #separadorScroll {
   font-family: "Roboto", sans-serif;
 }
 
-/* .footer-nombre h3 {
-  margin: 0px 0px 10px;
-  font-size: 1.5rem;
-}
-
-.footer-nombre p {
-  margin: 0;
-  font-size: 1rem;
-  color: #ccc;
-}
-
-.footer-redes a {
-  color: #dab217;
-  margin: 0 0.5rem;
-  font-size: 1.4rem;
-  transition: color 0.3s ease;
-  text-decoration: none;
-}
-
-.footer-redes a:hover {
-  color: #fff;
-}
-
-.footer-copy {
-  margin-top: 1rem;
-  font-size: 0.9rem;
-  color: #888;
-} */
-
 .footer {
-  background-color: #222; /* ejemplo */
+  background-color: #010c28; /* ejemplo */
   color: #fff;
   padding: 20px 120px 30px;
 }
@@ -1103,25 +1101,25 @@ header.scroll-activo #separadorScroll {
 .footer-info h3,
 .footer-startup h4 {
   margin-bottom: 10px;
-  color: #dab217;
+  color: #4576ff;
 }
 
 .footer-redes a {
   margin-right: 10px;
-  color: #dab217;
+  color: #e0e0e0;
   font-size: 1.2rem;
   transition: 0.3s;
   text-decoration: none;
 }
 
 .footer-redes a:hover {
-  color: #dab217;
+  color: #4576ff;
 }
 
 .btn-landing {
   display: inline-block;
   padding: 8px 16px;
-  background-color: #dab217;
+  background-color: #e0e0e0;
   color: #000;
   font-weight: bold;
   border-radius: 5px;
@@ -1130,7 +1128,7 @@ header.scroll-activo #separadorScroll {
 }
 
 .btn-landing:hover {
-  background-color: #ffcc00;
+  background-color: #4576ff;
 }
 
 .footer-copy {
@@ -1141,10 +1139,10 @@ header.scroll-activo #separadorScroll {
 }
 
 @media (max-width: 768px) {
-  .infoNombre {
+  /*   .infoNombre {
     font-size: 28px;
   }
-
+ */
   .contenedorMenu {
     display: none;
   }
@@ -1156,12 +1154,12 @@ header.scroll-activo #separadorScroll {
     text-align: center;
   }
 
-  .contenedorInformacionYFoto {
+  /*   .contenedorInformacionYFoto {
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 1.5rem 1rem;
-  }
+  } */
 
   .contenedorInformacion {
     padding: 0 1rem;
@@ -1263,7 +1261,7 @@ header.scroll-activo #separadorScroll {
   .barra {
     width: 100%;
     height: 5px;
-    background: white;
+    background: #4475fd;
     margin: 2px 0;
     transition: all 0.3s;
     border-radius: 2px;
@@ -1276,6 +1274,9 @@ header.scroll-activo #separadorScroll {
   .contenedorInformacionYFoto {
     flex-direction: column-reverse;
     height: 620px;
+    align-items: center;
+    text-align: center;
+    padding: 0rem 1.5rem 1rem;
   }
 
   .ocultar-logo {
@@ -1303,17 +1304,16 @@ header.scroll-activo #separadorScroll {
   }
 
   .infoNombre {
-    font-size: 24px;
+    font-size: 21px;
     margin-bottom: 20px;
   }
 
   .parrafoInformacion {
-    font-size: 21px;
+    font-size: 19px;
     text-align: justify;
-    color: #ffffff;
+    color: #e0e0e0;
     line-height: 1.6;
     margin-top: 0px;
-    margin: 1remw;
   }
   .seccion-comentarios h1 {
     font-size: 23px;
@@ -1325,7 +1325,7 @@ header.scroll-activo #separadorScroll {
     margin-bottom: 15px;
   }
   .spanAmarillo {
-    color: #dab217;
+    color: white;
     font-size: 23px;
   }
   .carrusel-testimonios {
@@ -1497,6 +1497,22 @@ header.scroll-activo #separadorScroll {
   .footer-startup h4 {
     margin-top: 40px;
     margin-bottom: 10px;
-    color: #dab217;
+    color: #4576ff;
+  }
+
+  .logotipoCAL {
+    position: absolute;
+    top: 15px;
+    width: 65px;
+    left: 25px;
+  }
+
+  .imgFooter {
+    margin-top: 40px;
+    width: 80px;
+  }
+
+  .footer-contenido {
+    justify-content: center;
   }
 }

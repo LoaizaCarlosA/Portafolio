@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1923 101">
+  <defs>
+    <clipPath id="clippath">
+      <rect x="-.1" y="0" width="1923.2" height="101.1" style="fill: none;"/>
+    </clipPath>
+  </defs>
+  <g style="clip-path: url(#clippath);">
+    <g>
+      <path d="M1925.9,0v154.3H-2.9L1925.9,0Z" style="fill: #4576ff;"/>
+      <path d="M-.9,0v154.3h1924.8L-.9,0Z" style="fill: #4576ff;"/>
+      <g style="opacity: .5;">
+        <path d="M1925.9,11.9v154.3H-2.9L1925.9,11.9Z" style="fill: #01209c;"/>
+        <path d="M-.9,11.9v154.3h1924.8L-.9,11.9Z" style="fill: #01209c;"/>
+      </g>
+      <path d="M1925.9,23.6v154.3H-2.9L1925.9,23.6Z" style="fill: #fff;"/>
+      <path d="M-.9,23.6v154.3h1924.8L-.9,23.6Z" style="fill: #fff;"/>
+    </g>
+  </g>
+</svg>
